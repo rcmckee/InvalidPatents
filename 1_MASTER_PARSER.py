@@ -44,26 +44,27 @@ s_primExAsEx = primExAsEx[2]
 primEx = primExAsEx[2]#make this so that the following else statement has a value to change  to change if no 'Assistant Examiner' is found
 assEx = ' '
 if len(s_primExAsEx) > 1:
-	print int_primEx[1]+' '+primExAsEx[0] + 'test to see if this is actually printing out int_primEx if "Assistant Examiner" is found'
-	assEx = primExAsEx[2].partition('Art Unit')
-	print  primExAsEx[1]+assEx[0]+' test to see if printing assEx[0] when "Assistant Examiner" is found'
-
+  print int_primEx[1]+' '+primExAsEx[0] + 'test to see if this is actually printing out int_primEx if "Assistant Examiner" is found'
+  primEx = int_primEx[1]+ ' '+primExAsEx[0] # test to see if uploading primEx to db when assistant examiner is found
+  assEx = primExAsEx[2].partition('Art Unit')
+  print  primExAsEx[1]+assEx[0]+' test to see if printing assEx[0] when "Assistant Examiner" is found'
+  assEx = primExAsEx[1]+assEx[0] #new hopefully uploads the assistant examiner into the database
 
 else:
-	primExAU = int_primEx[2].partition('Art Unit')
-	print primExAU[0]+' test to see if printing primExAU[0] when "Assistant Examiner" is not found'
-	primEx = primExAU[2]
+  primExAU = int_primEx[2].partition('Art Unit')
+  print primExAU[0]+' test to see if printing primExAU[0] when "Assistant Examiner" is not found'
+  primEx = primExAU[0] #i changed this from primExAu[2]. I didn't want that put into the db.
 
-int_atnyAgntFirm = primEx.partition('Attorney, Agent, or Firm') #primEx is now a string not a tuble
+int_atnyAgntFirm = int_primEx[2].partition('Attorney, Agent, or Firm') #changed this from partitioning primEx
 s_int_atnyAgntFirm = int_atnyAgntFirm[2]
 atnyAgntFirm = int_atnyAgntFirm[0]
-if len(s_int_atnyAgntFirm) > 1:
-	atnyAgntFirm = s_int_atnyAgntFirm.partition('(5')   #
-	print atnyAgntFirm[0]+'test to see if printing atnyAgntFirm[0]'
-	atnyAgntFirm = atnyAgntFirm[2]
+if len(s_int_atnyAgntFirm) > 1:                       #this means it found attorney agent firm; which it will do in most cases
+  atnyAgntFirm = s_int_atnyAgntFirm.partition('(5')   #
+  print atnyAgntFirm[0]+'test to see if printing atnyAgntFirm[0]'
+  atnyAgntFirm = atnyAgntFirm[0]        #changed from atnyagntfirm[2] to [0] then changed the later code to referense
 
 
-int_abst = atnyAgntFirm.partition('7)')
+int_abst = int_atnyAgntFirm[2].partition('7)')
 abst = int_abst[2].partition('Draw')
 print abst[0]+'test to see if printing abst'
 int_spec = abst[2].partition('ng')
@@ -190,4 +191,4 @@ db.commit()
 print pubNum+ ' inserted into database.'
 #print cursor.fetchone() #long crazy list
 db.close()
-#nothing is showing up in the database
+
