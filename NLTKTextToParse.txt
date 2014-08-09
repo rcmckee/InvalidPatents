@@ -1,0 +1,3094 @@
+
+US 7469381 B2 - List Scrolling And Document Translation, Scaling, And Rotation On A Touch-screen Display - 
+The Lens  
+
+  
+
+   
+ 
+ 
+   
+
+
+ 
+ 
+ 
+  
+ 
+ 
+  
+   
+   
+        
+      About 
+      Contact 
+      
+  
+   English
+  
+       
+           
+   中文简体
+  
+ 
+           
+   Español
+  
+ 
+           
+   Français
+  
+ 
+           
+   Русский язык
+  
+ 
+       
+      
+     
+    
+        
+      
+            
+Guest Work Area            
+            
+             Search History 
+             Collections 
+             Saved Queries 
+             Tags 
+              Profile 
+            
+           
+
+       
+      	 
+        Register 
+       /
+        Sign in 
+      Support 
+     
+    
+   
+  
+ 
+ 
+ 
+ 
+
+ 
+  Home 
+  US 7469381 B2 
+ 
+
+ 
+
+ 
+  
+   Summary 
+  
+  
+   Full-text 
+  
+  
+   Citations 
+  
+  
+   Family Info 
+  
+
+
+  
+   Legal Info 
+  
+  
+   Notes (0) 
+  
+ 
+
+ 
+ 
+
+ 
+   
+     
+    
+   
+   
+    
+				 
+      
+     
+     US 7469381 B2
+    
+    Granted Patent 
+   
+
+
+ 
+   
+    List Scrolling And Document Translation, Scaling, And Rotation On A Touch-screen Display 
+    
+    
+   
+   
+    
+     
+     Save 
+     Cancel 
+    
+    
+    Add new Note 
+   
+ 
+
+  
+    Published: Dec 23, 2008 
+
+   
+Family    63 
+   
+   
+Non Patent Citations    7 
+   
+   
+Cites    72 
+   
+   
+Cited    84 
+   
+   
+     PDF 
+   
+  
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  *US07469381B2* 
+ 
+ 
+  US007469381B2
+			      
+			   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ (12) United States Patent  (10)  Patent No.:  US 7,469,381 B2 
+ 
+ 
+  Ording  
+									(45)
+								  Date of Patent:  Dec. 23, 2008 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ (54) List scrolling and document translation, scaling, and rotation on a touch-screen display  
+ 
+ 
+   
+ 
+ 
+ (75) Inventor: Bas Ording , San Francisco, CA (US) 
+ 
+ 
+ (73) Assignee: Apple Inc. , Cupertino, CA (US), Type: US Company 
+ 
+ 
+ (*) Notice: Subject to any disclaimer, the term of this patent is extended or adjusted under 35 U.S.C. 154(b) by 0 days. 
+ 
+ 
+ (21) Appl. No.: 11/956,969  
+ 
+ 
+ (22) Filed: Dec. 14, 2007  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ (65) Prior Publication Data  
+ 
+ 
+ US 2008/0168404 A1 Jul. 10, 2008 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Related U.S. Patent Documents  
+ 
+ 
+ (60) Provisional application No. 60/937,993, filed on Jun. 29, 2007. 
+ 
+ 
+ 
+ Provisional application No. 60/946,971, filed on Jun. 28, 2007. 
+ 
+ 
+ 
+ Provisional application No. 60/945,858, filed on Jun. 22, 2007. 
+ 
+ 
+ 
+ Provisional application No. 60/879,469, filed on Jan. 8, 2007. 
+ 
+ 
+ 
+ Provisional application No. 60/883,801, filed on Jan. 7, 2007. 
+ 
+ 
+ 
+ Provisional application No. 60/879,253, filed on Jan. 7, 2007. 
+ 
+ 
+ 
+ 
+ 
+ (51) Int. Cl.  G06F 003/01 (20060101) 
+ 
+ 
+ 
+ 
+ (52) U.S. Cl.  715/702 ;
+				715/764;
+				715/863;
+				715/864;
+				715/769 
+ 
+ 
+ 
+ 
+ (58) Field of Search  715/764, 769, 702, 863, 864 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ (56) References Cited 
+ 
+ 
+ 
+ 
+ 
+ U.S. PATENT DOCUMENTS 
+ 
+ 
+ 5,495,566 A  2/1996  Kwatinetz  395/157 
+ 
+ 
+ 5,844,547 A  12/1998  Minakuchi et al.  345/173 
+ 
+ 
+ 5,867,158 A  2/1999  Murasaki et al.  345/341 
+ 
+ 
+ 6,034,688 A  3/2000  Greenwood et al.  345/353 
+ 
+ 
+ 6,489,951 B1  12/2002  Wong et al.  345/173 
+ 
+ 
+ 6,567,102 B2  5/2003  Kung  345/660 
+ 
+ 
+ 6,661,409 B2  12/2003  Demartines et al.  345/173 
+ 
+ 
+ 6,690,387 B2 * 2/2004  Zimmerman et al.  345/684 
+ 
+ 
+ 6,707,449 B2  3/2004  Hinckley et al.  345/173 
+ 
+ 
+ 6,809,724 B1  10/2004  Shiraishi et al.  345/169 
+ 
+ 
+ 6,907,575 B2  6/2005  Duarte  715/784 
+ 
+ 
+ 6,912,462 B2  6/2005  Ogaki  701/208 
+ 
+ 
+ 6,972,776 B2  12/2005  Davis et al.  345/684 
+ 
+ 
+ 6,975,306 B2  12/2005  Hinckley et al.  345/173 
+ 
+ 
+ 7,009,599 B2  3/2006  Pihlaja  345/173 
+ 
+ 
+ 7,046,230 B2  5/2006  Zadesky et al.  345/156 
+ 
+ 
+ 7,075,512 B1  7/2006  Fabre et al.  345/156 
+ 
+ 
+ 7,102,626 B2  9/2006  Denny, III  345/179 
+ 
+ 
+ 7,154,534 B2  12/2006  Seki et al.  348/207.1 
+ 
+ 
+ 7,155,048 B2  12/2006  Ohara  382/132 
+ 
+ 
+ 7,181,373 B2  2/2007  Le Cocq et al.  703/1 
+ 
+ 
+ 7,184,796 B2  2/2007  Karidis et al.  455/566 
+ 
+ 
+ 7,240,291 B2  7/2007  Card et al.  715/776 
+ 
+ 
+ 2003//0095135 A1  5/2003  Kaasila et al.  345/613 
+ 
+ 
+ 2003//0095697 A1  5/2003  Wood et al.  382/131 
+ 
+ 
+ 2003//0184525 A1  10/2003  Tsai  345/173 
+ 
+ 
+ 2004//0021676 A1  2/2004  Chen et al.  345/684 
+ 
+ 
+ 2004//0027398 A1 * 2/2004  Jaeger  345/863 
+ 
+ 
+ 2004//0080541 A1  4/2004  Saiga et al.  345/805 
+ 
+ 
+ 2004//0155888 A1  8/2004  Padgitt et al.  345/619 
+ 
+ 
+ 2004//0263486 A1  12/2004  Seni  345/173 
+ 
+ 
+ 2005//0012723 A1  1/2005  Pallakoff  345/173 
+ 
+ 
+ 2005//0145807 A1  7/2005  Lapstun et al.  250/566 
+ 
+ 
+ 2005//0168488 A1  8/2005  Montague  345/659 
+ 
+ 
+ 2005//0198588 A1  9/2005  Lin et al.  715/784 
+ 
+ 
+ 2005//0237308 A1  10/2005  Autio et al.  345/173 
+ 
+ 
+ 2005//0270269 A1  12/2005  Tokkonen  345/156 
+ 
+ 
+ 2005//0275618 A1  12/2005  Juh et al.  345/156 
+ 
+ 
+ 2006//0025218 A1  2/2006  Hotta  463/37 
+ 
+ 
+ 2006//0026521 A1  2/2006  Hotelling et al.  715/702 
+ 
+ 
+ 2006//0048073 A1  3/2006  Jarrett et al.  715/784 
+ 
+ 
+ 2006//0055669 A1  3/2006  Das  345/156 
+ 
+ 
+ 2006//0061551 A1  3/2006  Fateh  345/158 
+ 
+ 
+ 2006//0077544 A1  4/2006  Stark  359/448 
+ 
+ 
+ 2006//0082549 A1  4/2006  Hoshino et al.  345/157 
+ 
+ 
+ 2006//0094502 A1  5/2006  Katayama et al.  463/31 
+ 
+ 
+ 2006//0156249 A1  7/2006  Blythe et al.  715/781 
+ 
+ 
+ 2006//0181510 A1  8/2006  Faith  345/158 
+ 
+ 
+ 2006//0187215 A1  8/2006  Rosenberg et al.  345/173 
+ 
+ 
+ 2006//0197753 A1  9/2006  Hotelling  345/173 
+ 
+ 
+ 2006//0238495 A1  10/2006  Davis  345/156 
+ 
+ 
+ 2007//0008066 A1  1/2007  Fukuda  340/5.52 
+ 
+ 
+ 2007//0024646 A1  2/2007  Saarinen et al.  345/660 
+ 
+ 
+ 2007//0046646 A1  3/2007  Kwon et al.  345/173 
+ 
+ 
+ 2007//0067745 A1  3/2007  Choi et al.  715/863 
+ 
+ 
+ 2007//0109275 A1  5/2007  Chuang  345/173 
+ 
+ 
+ 2007//0120835 A1  5/2007  Sato  345/173 
+ 
+ 
+ 2007//0150826 A1  6/2007  Anzures et al.  715/772 
+ 
+ 
+ 2007//0150842 A1  6/2007  Chaudhri et al.  715/863 
+ 
+ 
+ 2007//0152978 A1  7/2007  Kocienda et al.  345/173 
+ 
+ 
+ 2007//0152979 A1  7/2007  Jobs et al.  345/173 
+ 
+ 
+ 2007//0155434 A1  7/2007  Jobs et al.  455/565 
+ 
+ 
+ 2007//0156364 A1  7/2007  Rothkopf  702/117 
+ 
+ 
+ 2008//0104544 A1 * 5/2008  Collins et al.  715/846 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FOREIGN PATENT DOCUMENTS 
+ 
+ 
+ 
+ 
+ 
+   EP   0 635 779   A1      1/1995    
+ 
+ 
+   EP   0 701 220   A      3/1996    
+ 
+ 
+   EP   0 880 091   A2      11/1998    
+ 
+ 
+   WO   WO 02/01338   A1      1/2002    
+ 
+ 
+   WO   WO 03/060622   A2      7/2003    
+ 
+ 
+   WO   WO 20/05/052773   A2      6/2005    
+ 
+ 
+   WO   WO 20/06/003591   A      1/2006    
+ 
+ 
+   WO   WO 20/06/020305   A2      2/2006    
+ 
+ 
+ 
+ 
+ 
+ OTHER PUBLICATIONS 
+ 
+ 
+  
+ 
+ 
+ 
+Microsoft Word 2003 Screen Shots.
+* 
+ 
+ 
+ 
+Photo Mesa 3.1.2 2006 Screen Shots.
+* 
+ 
+ 
+ 
+International Search Report and Written Opinion for International Application No. PCT/US2008/050292, mailed Sep. 19, 2008.
+ 
+ 
+ 
+ 
+IBM, &ldquo;Scroll Control Box,&rdquo; IBM Technical Disclosure Bulletin, vol. 38, No. 04, Apr. 1993, pp. 399-403.
+ 
+ 
+ 
+ 
+Tidwell et al., &ldquo;Magnetism,&rdquo; Designing Interfaces, Nov. 2005, Section 85.
+ 
+ 
+ 
+ 
+Invitation to Pay Additional Fees for International Application No. PCT/US2008/050292, mailed Jul. 18, 2008.
+ 
+ 
+ 
+ 
+Miller, D., &ldquo;PersonalJava Application Environment,&rdquo; Sun Microsystems, http://java.sun.com/products/personaljava/touchable/, Jun. 8, 1999, 13 pages.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  * cited by examiner 
+ 
+ 
+ 
+ 
+ 
+  Primary Examiner &mdash;Boris Pesin 
+ 
+ 
+  Art Unit &mdash; 2174 
+ 
+ 
+  Exemplary claim number &mdash; 1 
+ 
+ 
+ 
+ 
+ 
+ (74) Attorney, Agent, or Firm &mdash; Morgan, Lewis &amp; Bockius LLP 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ (57) 
+ Abstract 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ In accordance with some embodiments, a computer-implemented method for use in conjunction with a device with a touch screen display is disclosed. In the method, a movement of an object on or near the touch screen display is detected. In response to detecting the movement, an electronic document displayed on the touch screen display is translated in a first direction. If an edge of the electronic document is reached while translating the electronic document in the first direction while the object is still detected on or near the touch screen display, an area beyond the edge of the document is displayed. After the object is no longer detected on or near the touch screen display, the document is translated in a second direction until the area beyond the edge of the document is no longer displayed. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 20 Claims , 38 Drawing Sheets, 
+
+and 
+38 
+Figures 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ RELATED APPLICATIONS 
+
+ 
+ 
+ 
+ 
+ [0001] This application claims priority to U.S. Provisional Patent Application Nos. 60/937,993, &ldquo;Portable Multifunction Device,&rdquo; filed Jun. 29, 2007; 60/946,971, &ldquo;List Scrolling and Document Translation, Scaling, and Rotation on a Touch-Screen Display,&rdquo; filed Jun. 28, 2007; 60/945,858, &ldquo;List Scrolling and Document Translation on a Touch-Screen Display,&rdquo; filed Jun. 22, 2007; 60/879,469, &ldquo;Portable Multifunction Device,&rdquo; filed Jan. 8, 2007; 60/883,801, &ldquo;List Scrolling and Document Translation on a Touch-Screen Display,&rdquo; filed Jan. 7, 2007; and 60/879,253, &ldquo;Portable Multifunction Device,&rdquo; filed Jan. 7, 2007. All of these applications are incorporated by reference herein in their entirety. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0002] This application is related to the following applications: (1) U.S. patent application Ser. No. 10/188,182, &ldquo;Touch Pad For Handheld Device,&rdquo; filed on Jul. 1, 2002; (2) U.S. patent application Ser. No. 10/722,948, &ldquo;Touch Pad For Handheld Device,&rdquo; filed on Nov. 25, 2003; (3) U.S. patent application Ser. No. 10/643,256, &ldquo;Movable Touch Pad With Added Functionality,&rdquo; filed on Aug. 18, 2003; (4) U.S. patent application Ser. No. 10/654,108, &ldquo;Ambidextrous Mouse,&rdquo; filed on Sep. 2, 2003; (5) U.S. patent application Ser. No. 10/840,862, &ldquo;Multipoint Touchscreen,&rdquo; filed on May 6, 2004; (6) U.S. patent application Ser. No. 10/903,964, &ldquo;Gestures For Touch Sensitive Input Devices,&rdquo; filed on Jul. 30, 2004; (7) U.S. patent application Ser. No. 11/038,590, &ldquo;Mode-Based Graphical User Interfaces For Touch Sensitive Input Devices&rdquo; filed on Jan. 18, 2005; (8) U.S. patent application Ser. No. 11/057,050, &ldquo;Display Actuator,&rdquo; filed on Feb. 11, 2005; (9) U.S. Provisional Patent Application No. 60/658,777, &ldquo;Multi-Functional Hand-Held Device,&rdquo; filed Mar. 4, 2005; (10) U.S. patent application Ser. No. 11/367,749, &ldquo;Multi-Functional Hand-Held Device,&rdquo; filed Mar. 3, 2006; and (11) U.S. Provisional Patent Application No. 60/824,769, &ldquo;Portable Multifunction Device,&rdquo; filed Sep. 6, 2006. All of these applications are incorporated by reference herein in their entirety. 
+ 
+ 
+ 
+ 
+
+
+
+ TECHNICAL FIELD 
+
+ 
+ 
+ 
+ 
+ [0003] The disclosed embodiments relate generally to devices with touch-screen displays, and more particularly to scrolling lists and to translating, rotating, and scaling electronic documents on devices with touch-screen displays. 
+ 
+ 
+ 
+ 
+
+ BACKGROUND 
+
+ 
+ 
+ 
+ 
+ [0004] As portable electronic devices become more compact, and the number of functions performed by a given device increases, it has become a significant challenge to design a user interface that allows users to easily interact with a multifunction device. This challenge is particularly significant for handheld portable devices, which have much smaller screens than desktop or laptop computers. This situation is unfortunate because the user interface is the gateway through which users receive not only content but also responses to user actions or behaviors, including user attempts to access a device's features, tools, and functions. Some portable communication devices (e.g., mobile telephones, sometimes called mobile phones, cell phones, cellular telephones, and the like) have resorted to adding more pushbuttons, increasing the density of push buttons, overloading the functions of pushbuttons, or using complex menu systems to allow a user to access, store and manipulate data. These conventional user interfaces often result in complicated key sequences and menu hierarchies that must be memorized by the user. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0005] Many conventional user interfaces, such as those that include physical pushbuttons, are also inflexible. This is unfortunate because it may prevent a user interface from being configured and/or adapted by either an application running on the portable device or by users. When coupled with the time consuming requirement to memorize multiple key sequences and menu hierarchies, and the difficulty in activating a desired pushbutton, such inflexibility is frustrating to most users. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0006] As a result of the small size of display screens on portable electronic devices and the potentially large size of electronic files, frequently only a portion of a list or of an electronic document of interest to a user can be displayed on the screen at a given time. Users thus will frequently need to scroll displayed lists or to translate displayed electronic documents. Users also will need to rotate and to scale (i.e., magnify or de-magnify) displayed electronic documents. However, the limitations of conventional user interfaces can cause these actions to be awkward to perform. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0007] Furthermore, scrolling displayed lists and translating electronic documents can be awkward on both portable and non-portable electronic devices with touch-screen displays. A user may become frustrated if the scrolling or translation does not reflect the user's intent. Similarly, a user may become frustrated if rotation and scaling of electronic documents does not reflect the user's intent. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0008] Accordingly, there is a need for devices with touch-screen displays with more transparent and intuitive user interfaces for scrolling lists of items and for translating, rotating, and scaling electronic documents that are easy to use, configure, and/or adapt. 
+ 
+ 
+ 
+ 
+
+ SUMMARY 
+
+ 
+ 
+ 
+ 
+ [0009] The above deficiencies and other problems associated with user interfaces for portable devices and devices with touch-sensitive displays are reduced or eliminated by the disclosed device. In some embodiments, the device has a touch-sensitive display (also known as a &ldquo;touch screen&rdquo;) with a graphical user interface (GUI), one or more processors, memory and one or more modules, programs or sets of instructions stored in the memory for performing multiple functions. In some embodiments, the user interacts with the GUI primarily through finger contacts and gestures on the touch-sensitive display. In some embodiments, the functions may include telephoning, video conferencing, e-mailing, instant messaging, blogging, digital photographing, digital videoing, web browsing, digital music playing, and/or digital video playing. Instructions for performing these functions may be included in a computer program product configured for execution by one or more processors. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0010] In accordance with some embodiments, a computer-implemented method for use in conjunction with a device with a touch screen display is disclosed. In the method, a movement of an object on or near the touch screen display is detected. In response to detecting the movement, an electronic document displayed on the touch screen display is translated in a first direction. If an edge of the electronic document is reached while translating the electronic document in the first direction while the object is still detected on or near the touch screen display, an area beyond the edge of the document is displayed. After the object is no longer detected on or near the touch screen display, the document is translated in a second direction until the area beyond the edge of the document is no longer displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0011] In accordance with some embodiments, a graphical user interface on a device with a touch screen display is disclosed, comprising a portion of an electronic document displayed on the touch screen display and an area beyond an edge of the document. In the graphical user interface, in response to detecting a movement of an object on or near the touch screen display, the electronic document is translated in a first direction. If the edge of the electronic document is reached while translating the electronic document in the first direction while the object is still detected on or near the touch screen display, the area beyond the edge of the document is displayed. After the object is no longer detected on or near the touch screen display, the document is translated in a second direction until the area beyond the edge of the document is no longer displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0012] In accordance with some embodiments, a device is disclosed, comprising a touch screen display, one or more processors, memory, and one or more programs. The one or more programs are stored in the memory and configured to be executed by the one or more processors. The one or more programs include instructions for detecting a movement of an object on or near the touch screen display and instructions for translating an electronic document displayed on the touch screen display in a first direction, in response to detecting the movement. The one or more programs also include instructions for displaying an area beyond an edge of the electronic document if the edge of the electronic document is reached while translating the electronic document in the first direction while the object is still detected on or near the touch screen display. The one or more programs further include instructions for translating the document in a second direction until the area beyond the edge of the document is no longer displayed, after the object is no longer detected on or near the touch screen display. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0013] In accordance with some embodiments, a computer-program product is disclosed, comprising a computer readable storage medium and a computer program mechanism embedded therein. The computer program mechanism comprises instructions, which when executed by a device with a touch screen display, cause the device to detect a movement of an object on or near the touch screen display and to translate an electronic document displayed on the touch screen display in a first direction, in response to detecting the movement. The instructions also cause the device to display an area beyond an edge of the electronic document if the edge of the electronic document is reached while translating the electronic document in the first direction while the object is still detected on or near the touch screen display. The instructions further cause the device to translate the document in a second direction until the area beyond the edge of the document is no longer displayed, after the object is no longer detected on or near the touch screen display. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0014] In accordance with some embodiments, a device with a touch screen display is disclosed. The device comprises means for detecting a movement of an object on or near the touch screen display and means for translating an electronic document displayed on the touch screen display in a first direction, in response to detecting the movement. The device also comprises means for displaying an area beyond an edge of the electronic document if the edge of the electronic document is reached while translating the electronic document in the first direction while the object is still detected on or near the touch screen display. The device further comprises means for translating the document in a second direction until the area beyond the edge of the document is no longer displayed, after the object is no longer detected on or near the touch screen display. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0015] In accordance with some embodiments, a computer-implemented method for use in conjunction with a device with a touch screen display is disclosed. In the method, a movement of an object on or near the touch screen display is detected. In response to detecting the movement, a list of items displayed on the touch screen display is scrolled in a first direction. If a terminus of the list is reached while scrolling the list in the first direction while the object is still detected on or near the touch screen display, an area beyond the terminus of the list is displayed. After the object is no longer detected on or near the touch screen display, the list is scrolled in a second direction opposite the first direction until the area beyond the terminus of the list is no longer displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0016] In accordance with some embodiments, a graphical user interface on a device with a touch screen display is disclosed, comprising a portion of a list of items displayed on the touch screen display and an area beyond a terminus of the list. In response to detecting a movement of an object on or near the touch screen display, the list is scrolled in a first direction. If the terminus of the list is reached while scrolling the list in the first direction while the object is still detected on or near the touch screen display, the area beyond the terminus of the list is displayed. After the object is no longer detected on or near the touch screen display, the list is scrolled in a second direction opposite the first direction until the area beyond the terminus of the list is no longer displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0017] In accordance with some embodiments, a device is disclosed, comprising a touch screen display, one or more processors, memory, and one or more programs. The one or more programs are stored in the memory and configured to be executed by the one or more processors. The one or more programs include instructions for detecting a movement of an object on or near the touch screen display and instructions for scrolling a list of items displayed on the touch screen display in a first direction in response to detecting the movement. The one or more programs also include instructions for displaying an area beyond a terminus of the list if the terminus of the list is reached while scrolling the list in the first direction while the object is still detected on or near the touch screen display. The one or more programs further include instructions for scrolling the list in a second direction opposite the first direction until the area beyond the terminus of the list is no longer displayed, after the object is no longer detected on or near the touch screen display. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0018] In accordance with some embodiments, a computer-program product is disclosed, comprising a computer readable storage medium and a computer program mechanism embedded therein. The computer program mechanism comprises instructions, which when executed by a device with a touch screen display, cause the device to detect a movement of an object on or near the touch screen display and to scroll a list of items displayed on the touch screen display in a first direction in response to detecting the movement. The instructions also cause the device to display an area beyond a terminus of the list if the terminus of the list is reached while scrolling the list in the first direction while the object is still detected on or near the touch screen display. The instructions further cause the device to scroll the list in a second direction opposite the first direction until the area beyond the terminus of the list is no longer displayed, after the object is no longer detected on or near the touch screen display. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0019] In accordance with some embodiments, a device with a touch screen display is disclosed. The device comprises means for detecting a movement of an object on or near the touch screen display and means for scrolling a list of items displayed on the touch screen display in a first direction in response to detecting the movement. The device also comprises means for displaying an area beyond a terminus of the list if the terminus of the list is reached while scrolling the list in the first direction while the object is still detected on or near the touch screen display. The device further comprises means for scrolling the list in a second direction opposite the first direction until the area beyond the terminus of the list is no longer displayed, after the object is no longer detected on or near the touch screen display. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0020] In accordance with some embodiments, a computer-implemented method for use at a device with a touch screen display includes detecting a multifinger twisting gesture on or near the touch screen display. The multifinger twisting gesture has a corresponding degree of rotation. If the corresponding degree of rotation exceeds a predefined degree of rotation, a 90&deg; screen rotation command is executed. If the corresponding degree of rotation is less than the predefined degree of rotation, a screen rotation command with an acute angle of rotation is executed and, upon ceasing to detect the multifinger twisting gesture, a screen rotation command with an angle of rotation opposite to the acute angle is executed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0021] In accordance with some embodiments, a device includes a touch screen display, one or more processors, memory, and one or more programs. The one or more programs are stored in the memory and configured to be executed by the one or more processors. The one or more programs include: instructions for detecting a multifinger twisting gesture on or near the touch screen display, wherein the multifinger twisting gesture has a corresponding degree of rotation; instructions for executing a 90&deg; screen rotation command, if the corresponding degree of rotation exceeds a predefined degree of rotation; and instructions for executing a screen rotation command with an acute angle of rotation and for executing, upon ceasing to detect the multifinger twisting gesture, a screen rotation command with an angle of rotation opposite to the acute angle, if the corresponding degree of rotation is less than the predefined degree of rotation. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0022] In accordance with some embodiments, a computer-program product includes a computer readable storage medium and a computer program mechanism embedded therein. The computer program mechanism includes instructions, which when executed by a device with a touch screen display, cause the device to: detect a multifinger twisting gesture on or near the touch screen display, wherein the multifinger twisting gesture has a corresponding degree of rotation; execute a 90&deg; screen rotation command, if the corresponding degree of rotation exceeds a predefined degree of rotation; and execute a screen rotation command with an acute angle of rotation and, upon ceasing to detect the multifinger twisting gesture, execute a screen rotation command with an angle of rotation opposite to the acute angle, if the corresponding degree of rotation is less than the predefined degree of rotation. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0023] In accordance with some embodiments, a device with a touch screen display includes: means for detecting a multifinger twisting gesture on or near the touch screen display, wherein the multifinger twisting gesture has a corresponding degree of rotation; means for executing a 90&deg; screen rotation command, if the corresponding degree of rotation exceeds a predefined degree of rotation; and means for executing a screen rotation command with an acute angle of rotation and, upon ceasing to detect the multifinger twisting gesture, for executing a screen rotation command with an angle of rotation opposite to the acute angle, if the corresponding degree of rotation is less than the predefined degree of rotation. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0024] In accordance with some embodiments, a computer-implemented method of displaying an electronic document having a document length and a document width, for use at a device with a touch screen display, includes displaying the electronic document at a first magnification and detecting a gesture on or near the touch screen display corresponding to a command to zoom out by a user-specified amount. In response to detecting the gesture, the electronic document is displayed at a magnification less than the first magnification. If the document length or document width is entirely displayed while the gesture is still detected on or near the touch screen display, the electronic document is displayed at a magnification wherein areas beyond opposite edges of the electronic document are displayed, and upon detecting termination of the gesture, the electronic document is displayed at a magnification wherein the areas beyond opposite edges of the electronic document are no longer displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0025] In accordance with some embodiments, a graphical user interface on a device with a touch screen display includes an electronic document having a document length and a document width, to be displayed on the touch screen display at multiple magnifications including a first magnification, and areas beyond opposite edges of the electronic document. In response to detecting a gesture on or near the touch screen display corresponding to a command to zoom out by a user-specified amount, wherein the gesture is detected while displaying the electronic document at the first magnification, the electronic document is displayed at a magnification less than the first magnification. If the document length or document width is entirely displayed while the gesture is still detected on or near the touch screen display, the electronic document is displayed at a magnification wherein the areas beyond opposite edges of the electronic document are displayed, and upon detecting termination of the gesture, the electronic document is displayed at a magnification wherein the areas beyond opposite edges of the electronic document are no longer displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0026] In accordance with some embodiments, a device includes a touch screen display, one or more processors, memory, and one or more programs. The one or more programs are stored in the memory and configured to be executed by the one or more processors. The one or more programs include: instructions for displaying an electronic document at a first magnification; instructions for detecting a gesture on or near the touch screen display corresponding to a command to zoom out by a user-specified amount; instructions for displaying the electronic document at a magnification less than the first magnification, in response to detecting the gesture; instructions for displaying the electronic document at a magnification wherein areas beyond opposite edges of the electronic document are displayed, if a document length or a document width is entirely displayed while the gesture is still detected on or near the touch screen display; and instructions for displaying the electronic document at a magnification wherein the areas beyond opposite edges of the electronic document are no longer displayed, upon detecting termination of the gesture. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0027] In accordance with some embodiments, a computer-program product includes a computer readable storage medium and a computer program mechanism embedded therein. The computer program mechanism includes instructions, which when executed by a device with a touch screen display, cause the device to: display an electronic document at a first magnification; detect a gesture on or near the touch screen display corresponding to a command to zoom out by a user-specified amount; display the electronic document at a magnification less than the first magnification, in response to detecting the gesture; display the electronic document at a magnification wherein areas beyond opposite edges of the electronic document are displayed, if a document length or a document width is entirely displayed while the gesture is still detected on or near the touch screen display; and display the electronic document at a magnification wherein the areas beyond opposite edges of the electronic document are no longer displayed, upon detecting termination of the gesture. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0028] In accordance with some embodiments, a device with a touch screen display includes: means for displaying an electronic document at a first magnification; means for detecting a gesture on or near the touch screen display corresponding to a command to zoom out by a user-specified amount; means for displaying the electronic document at a magnification less than the first magnification, in response to detecting the gesture; means for displaying the electronic document at a magnification wherein areas beyond opposite edges of the electronic document are displayed, if a document length or a document width is entirely displayed while the gesture is still detected on or near the touch screen display; and means for displaying the electronic document at a magnification wherein the areas beyond opposite edges of the electronic document are no longer displayed, upon detecting termination of the gesture. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0029] In accordance with some embodiments, a computer-implemented method of displaying an electronic document, for use at a device with a touch screen display, includes displaying at least a first portion of the electronic document at a first magnification and detecting a gesture on or near the touch screen display corresponding to a command to zoom in by a user-specified amount. In response to detecting the gesture, decreasing portions of the electronic document are displayed at increasing magnifications. Upon detecting termination of the gesture, if the magnification exceeds a predefined magnification, a respective portion of the electronic document is displayed at the predefined magnification. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0030] In accordance with some embodiments, a graphical user interface on a device with a touch screen display includes decreasing portions of an electronic document, to be displayed on the touch screen display at increasing magnifications. The decreasing portions of the electronic document include a first portion. In response to detecting a gesture on or near the touch screen display corresponding to a command to zoom in by a user-specified amount, wherein the gesture is detected while displaying at least the first portion of an electronic document at a first magnification, the decreasing portions of the electronic document are displayed at the increasing magnifications. Upon detecting termination of the gesture, if the magnification exceeds a predefined magnification, a respective portion of the electronic document is displayed at the predefined magnification. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0031] In accordance with some embodiments, a device includes a touch screen display, one or more processors, memory, and one or more programs. The one or more programs are stored in the memory and configured to be executed by the one or more processors. The one or more programs include: instructions for displaying at least a first portion of an electronic document at a first magnification; instructions for detecting a gesture on or near the touch screen display corresponding to a command to zoom in by a user-specified amount; instructions for displaying decreasing portions of the electronic document at increasing magnifications, in response to detecting the gesture; and instructions for displaying a respective portion of the electronic document at a predefined magnification if, upon detecting termination of the gesture, the magnification exceeds the predefined magnification. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0032] In accordance with some embodiments, a computer-program product includes a computer readable storage medium and a computer program mechanism embedded therein. The computer program mechanism includes instructions, which when executed by a device with a touch screen display, cause the device to: display at least a first portion of an electronic document at a first magnification; detect a gesture on or near the touch screen display corresponding to a command to zoom in by a user-specified amount; display decreasing portions of the electronic document at increasing magnifications, in response to detecting the gesture; and display a respective portion of the electronic document at a predefined magnification if, upon detecting termination of the gesture, the magnification exceeds a predefined magnification. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0033] In accordance with some embodiments, a device with a touch screen display includes means for displaying at least a first portion of an electronic document at a first magnification; means for detecting a gesture on or near the touch screen display corresponding to a command to zoom in by a user-specified amount; means for displaying decreasing portions of the electronic document at increasing magnifications, in response to detecting the gesture; and means for displaying a respective portion of the electronic document at a predefined magnification if, upon detecting termination of the gesture, the magnification exceeds the predefined magnification. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0034] The disclosed embodiments provide for easy and intuitive scrolling of lists and translating of electronic documents on a device with a touch screen display, and for easy and intuitive rotation and scaling of electronic documents on a device with a touch screen display. 
+ 
+ 
+ 
+ 
+
+
+
+
+ BRIEF DESCRIPTION OF THE DRAWINGS 
+
+ 
+ 
+ 
+ 
+ [0035] For a better understanding of the aforementioned embodiments of the invention as well as additional embodiments thereof, reference should be made to the Description of Embodiments below, in conjunction with the following drawings in which like reference numerals refer to corresponding parts throughout the figures. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0036] FIG. 1 is a block diagram illustrating a portable multifunction device with a touch-sensitive display in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0037] FIG. 2 illustrates a portable multifunction device having a touch screen in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0038] FIG. 3 illustrates an exemplary user interface for unlocking a portable electronic device in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0039] FIG. 4 illustrates an exemplary user interface for a menu of applications on a portable multifunction device in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0040] FIG. 5 is a flow diagram illustrating a method of scrolling through a list in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0041] FIGS. 6A-6D illustrate an exemplary user interface for managing an inbox in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0042] FIG. 7 is a flow diagram illustrating a method of translating an electronic document in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0043] FIGS. 8A-8D illustrate an exemplary user interface for a browser in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0044] FIG. 9 is a flow diagram illustrating a process of displaying an electronic document at multiple magnifications in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0045] FIGS. 10A-10C illustrate the display of an electronic document at multiple magnifications in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0046] FIG. 11 is a flow diagram illustrating a process of displaying an electronic document at multiple magnifications in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0047] FIGS. 12A-12C illustrate the display of an electronic document at multiple magnifications in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0048] FIGS. 13A-13C illustrate the display of an electronic document at multiple magnifications in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0049] FIG. 14 is a flow diagram illustrating a process of executing a screen rotation command in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0050] FIGS. 15A-15E illustrate rotating the display of an electronic document or other digital object in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0051] FIGS. 16A-16F illustrate an exemplary screen rotation gesture in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0052] FIG. 17 is a block diagram illustrating a device with a touch-screen display in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+
+
+
+ DESCRIPTION OF EMBODIMENTS 
+
+ 
+ 
+ 
+ 
+ [0053] Reference will now be made in detail to embodiments, examples of which are illustrated in the accompanying drawings. In the following detailed description, numerous specific details are set forth in order to provide a thorough understanding of the present invention. However, it will be apparent to one of ordinary skill in the art that the present invention may be practiced without these specific details. In other instances, well-known methods, procedures, components, circuits, and networks have not been described in detail so as not to unnecessarily obscure aspects of the embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0054] Embodiments of a portable multifunction device, user interfaces for such devices, and associated processes for using such devices are described. In some embodiments, the device is a portable communications device such as a mobile telephone that also contains other functions, such as PDA and/or music player functions. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0055] The user interface may include a physical click wheel in addition to a touch screen or a virtual click wheel displayed on the touch screen. A click wheel is a user-interface device that may provide navigation commands based on an angular displacement of the wheel or a point of contact with the wheel by a user of the device. A click wheel may also be used to provide a user command corresponding to selection of one or more items, for example, when the user of the device presses down on at least a portion of the wheel or the center of the wheel. Alternatively, breaking contact with a click wheel image on a touch screen surface may indicate a user command corresponding to selection. For simplicity, in the discussion that follows, a portable multifunction device that includes a touch screen is used as an exemplary embodiment. It should be understood, however, that some of the user interfaces and associated processes may be applied to other devices, such as personal computers and laptop computers, that may include one or more other physical user-interface devices, such as a physical click wheel, a physical keyboard, a mouse and/or a joystick. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0056] The device supports a variety of applications, such as a telephone application, a video conferencing application, an e-mail application, an instant messaging application, a blogging application, a digital camera application, a digital video camera application, a web browsing application, a digital music player application, and/or a digital video player application. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0057] The various applications that may be executed on the device may use at least one common physical user-interface device, such as the touch screen. One or more functions of the touch screen as well as corresponding information displayed on the device may be adjusted and/or varied from one application to the next and/or within a respective application. In this way, a common physical architecture (such as the touch screen) of the device may support the variety of applications with user interfaces that are intuitive and transparent. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0058] The user interfaces may include one or more soft keyboard embodiments. The soft keyboard embodiments may include standard (QWERTY) and/or non-standard configurations of symbols on the displayed icons of the keyboard, such as those described in U.S. patent applications Ser. No. 11/459,606, &ldquo;Keyboards For Portable Electronic Devices,&rdquo; filed Jul. 24, 2006, and Ser. No. 11/459,615, &ldquo;Touch Screen Keyboards For Portable Electronic Devices,&rdquo; filed Jul. 24, 2006, the contents of which are hereby incorporated by reference herein in their entirety. The keyboard embodiments may include a reduced number of icons (or soft keys) relative to the number of keys in existing physical keyboards, such as that for a typewriter. This may make it easier for users to select one or more icons in the keyboard, and thus, one or more corresponding symbols. The keyboard embodiments may be adaptive. For example, displayed icons may be modified in accordance with user actions, such as selecting one or more icons and/or one or more corresponding symbols. One or more applications on the portable device may utilize common and/or different keyboard embodiments. Thus, the keyboard embodiment used may be tailored to at least some of the applications. In some embodiments, one or more keyboard embodiments may be tailored to a respective user. For example, based on a word usage history (lexicography, slang, individual usage) of the respective user. Some of the keyboard embodiments may be adjusted to reduce a probability of a user error when selecting one or more icons, and thus one or more symbols, when using the soft keyboard embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0059] Attention is now directed towards embodiments of the device. FIG. 1 is a block diagram illustrating a portable multifunction device 100 with a touch-sensitive display 112 in accordance with some embodiments. The touch-sensitive display 112 is sometimes called a &ldquo;touch screen&rdquo; for convenience. The device 100 may include a memory 102 (which may include one or more computer readable storage mediums), a memory controller 122 , one or more processing units (CPU's) 120 , a peripherals interface 118 , RF circuitry 108 , audio circuitry 110 , a speaker 111 , a microphone 113 , an input/output (I/O) subsystem 106 , other input or control devices 116 , and an external port 124 . The device 100 may include one or more optical sensors 164 . These components may communicate over one or more communication buses or signal lines 103 . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0060] It should be appreciated that the device 100 is only one example of a portable multifunction device 100 , and that the device 100 may have more or fewer components than shown, may combine two or more components, or a may have a different configuration or arrangement of the components. The various components shown in FIG. 1 may be implemented in hardware, software or a combination of both hardware and software, including one or more signal processing and/or application specific integrated circuits. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0061] Memory 102 may include high-speed random access memory and may also include non-volatile memory, such as one or more magnetic disk storage devices, flash memory devices, or other non-volatile solid-state memory devices. Access to memory 102 by other components of the device 100 , such as the CPU 120 and the peripherals interface 118 , may be controlled by the memory controller 122 . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0062] The peripherals interface 118 couples the input and output peripherals of the device to the CPU 120 and memory 102 . The one or more processors 120 run or execute various software programs and/or sets of instructions stored in memory 102 to perform various functions for the device 100 and to process data. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0063] In some embodiments, the peripherals interface 118 , the CPU 120 , and the memory controller 122 may be implemented on a single chip, such as a chip 104 . In some other embodiments, they may be implemented on separate chips. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0064] The RF (radio frequency) circuitry 108 receives and sends RF signals, also called electromagnetic signals. The RF circuitry 108 converts electrical signals to/from electromagnetic signals and communicates with communications networks and other communications devices via the electromagnetic signals. The RF circuitry 108 may include well-known circuitry for performing these functions, including but not limited to an antenna system, an RF transceiver, one or more amplifiers, a tuner, one or more oscillators, a digital signal processor, a CODEC chipset, a subscriber identity module (SIM) card, memory, and so forth. The RF circuitry 108 may communicate with networks, such as the Internet, also referred to as the World Wide Web (WWW), an intranet and/or a wireless network, such as a cellular telephone network, a wireless local area network (LAN) and/or a metropolitan area network (MAN), and other devices by wireless communication. The wireless communication may use any of a plurality of communications standards, protocols and technologies, including but not limited to Global System for Mobile Communications (GSM), Enhanced Data GSM Environment (EDGE), wideband code division multiple access (W-CDMA), code division multiple access (CDMA), time division multiple access (TDMA), Bluetooth, Wireless Fidelity (Wi-Fi) (e.g., IEEE 802.11a, IEEE 802.11b, IEEE 802.11g and/or IEEE 802.11n), voice over Internet Protocol (VoIP), Wi-MAX, a protocol for email, instant messaging, and/or Short Message Service (SMS)), or any other suitable communication protocol, including communication protocols not yet developed as of the filing date of this document. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0065] The audio circuitry 110 , the speaker 111 , and the microphone 113 provide an audio interface between a user and the device 100 . The audio circuitry 110 receives audio data from the peripherals interface 118 , converts the audio data to an electrical signal, and transmits the electrical signal to the speaker 111 . The speaker 111 converts the electrical signal to human-audible sound waves. The audio circuitry 110 also receives electrical signals converted by the microphone 113 from sound waves. The audio circuitry 110 converts the electrical signal to audio data and transmits the audio data to the peripherals interface 118 for processing. Audio data may be retrieved from and/or transmitted to memory 102 and/or the RF circuitry 108 by the peripherals interface 118 . In some embodiments, the audio circuitry 110 also includes a headset jack (not shown). The headset jack provides an interface between the audio circuitry 110 and removable audio input/output peripherals, such as output-only headphones or a headset with both output (e.g., a headphone for one or both ears) and input (e.g., a microphone). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0066] The I/O subsystem 106 couples input/output peripherals on the device 100 , such as the display system 112 and other input/control devices 116 , to the peripherals interface 118 . The I/O subsystem 106 may include a display controller 156 and one or more input controllers 160 for other input or control devices. The one or more input controllers 160 receive/send electrical signals from/to other input or control devices 116 . The other input/control devices 116 may include physical buttons (e.g., push buttons, rocker buttons, etc.), dials, slider switches, joysticks, click wheels, and so forth. In some alternate embodiments, input controller(s) 160 may be coupled to any (or none) of the following: a keyboard, infrared port, USB port, and a pointer device such as a mouse. The one or more buttons (e.g., 208 , FIG. 2 ) may include an up/down button for volume control of the speaker 111 and/or the microphone 113 . The one or more buttons may include a push button (e.g., 206 , FIG. 2 ). A quick press of the push button may disengage a lock of the touch screen 112 or begin a process that uses gestures on the touch screen to unlock the device, as described in U.S. patent application Ser. No. 11/322,549, &ldquo;Unlocking a Device by Performing Gestures on an Unlock Image,&rdquo; filed Dec. 23, 2005, which is hereby incorporated by reference herein in its entirety. A longer press of the push button (e.g., 206 ) may turn power to the device 100 on or off. The user may be able to customize a functionality of one or more of the buttons. The touch screen 112 is used to implement virtual or soft buttons and one or more soft keyboards. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0067] The touch-sensitive display system 112 provides an input interface and an output interface between the device and a user. The display controller 156 receives and/or sends electrical signals from/to the display system 112 . The display system 112 displays visual output to the user. The visual output may include graphics, text, icons, video, and any combination thereof (collectively termed &ldquo;graphics&rdquo;). In some embodiments, some or all of the visual output may correspond to user-interface objects, further details of which are described below. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0068] A touch screen in display system 112 is a touch-sensitive surface that accepts input from the user based on haptic and/or tactile contact. The display system 112 and the display controller 156 (along with any associated modules and/or sets of instructions in memory 102 ) detect contact (and any movement or breaking of the contact) on the display system 112 and converts the detected contact into interaction with user-interface objects (e.g., one or more soft keys, icons, web pages or images) that are displayed on the touch screen. In an exemplary embodiment, a point of contact between a touch screen in the display system 112 and the user corresponds to a finger of the user. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0069] The touch screen in the display system 112 may use LCD (liquid crystal display) technology, or LPD (light emitting polymer display) technology, although other display technologies may be used in other embodiments. The touch screen in the display system 112 and the display controller 156 may detect contact and any movement or breaking thereof using any of a plurality of touch sensing technologies now known or later developed, including but not limited to capacitive, resistive, infrared, and surface acoustic wave technologies, as well as other proximity sensor arrays or other elements for determining one or more points of contact with a touch screen in the display system 112 . A touch-sensitive display in some embodiments of the display system 112 may be analogous to the multi-touch sensitive tablets described in the following U.S. Pat. Nos. 6,323,846 (Westerman et al.), 6,570,557 (Westerman et al.), and/or 6,677,932 (Westerman), and/or U.S. Patent Publication 2002/0015024A1, each of which is hereby incorporated by reference herein in their entirety. However, a touch screen in the display system 112 displays visual output from the portable device 100 , whereas touch sensitive tablets do not provide visual output. The touch screen in the display system 112 may have a resolution in excess of 100 dpi. In an exemplary embodiment, the touch screen in the display system has a resolution of approximately 168 dpi. The user may make contact with the touch screen in the display system 112 using any suitable object or appendage, such as a stylus, a finger, and so forth. In some embodiments, the user interface is designed to work primarily with finger-based contacts and gestures, which are much less precise than stylus-based input due to the larger area of contact of a finger on the touch screen. In some embodiments, the device translates the rough finger-based input into a precise pointer/cursor position or command for performing the actions desired by the user. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0070] A touch-sensitive display in some embodiments of the display system 112 may be as described in the following applications: (1) U.S. patent application Ser. No. 11/381,313, &ldquo;Multipoint Touch Surface Controller,&rdquo; filed on May 2, 2006; (2) U.S. patent application Ser. No. 10/840,862, &ldquo;Multipoint Touchscreen,&rdquo; filed on May 6, 2004; (3) U.S. patent application Ser. No. 10/903,964, &ldquo;Gestures For Touch Sensitive Input Devices,&rdquo; filed on Jul. 30, 2004; (4) U.S. patent application Ser. No. 11/048,264, &ldquo;Gestures For Touch Sensitive Input Devices,&rdquo; filed on Jan. 31, 2005; (5) U.S. patent application Ser. No. 11/038,590, &ldquo;Mode-Based Graphical User Interfaces For Touch Sensitive Input Devices,&rdquo; filed on Jan. 18, 2005; (6) U.S. patent application Ser. No. 11/228,758, &ldquo;Virtual Input Device Placement On A Touch Screen User Interface,&rdquo; filed on Sep. 16, 2005; (7) U.S. patent application Ser. No. 11/228,700, &ldquo;Operation Of A Computer With A Touch Screen Interface,&rdquo; filed on Sep. 16, 2005; (8) U.S. patent application Ser. No. 11/228,737, &ldquo;Activating Virtual Keys Of A Touch-Screen Virtual Keyboard,&rdquo; filed on Sep. 16, 2005; and (9) U.S. patent application Ser. No. 11/367,749, &ldquo;Multi-Functional Hand-Held Device,&rdquo; filed on Mar. 3, 2006. All of these applications are incorporated by reference herein in their entirety. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0071] In some embodiments, in addition to the touch screen, the device 100 may include a touchpad (not shown) for activating or deactivating particular functions. In some embodiments, the touchpad is a touch-sensitive area of the device that, unlike the touch screen, does not display visual output. The touchpad may be a touch-sensitive surface that is separate from the touch screen in the display system 112 or an extension of the touch-sensitive surface formed by the touch screen. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0072] In some embodiments, the device 100 may include a physical or virtual click wheel as an input control device 116 . A user may navigate among and interact with one or more graphical objects (henceforth referred to as icons) displayed in the display system 112 by rotating the click wheel or by moving a point of contact with the click wheel (e.g., where the amount of movement of the point of contact is measured by its angular displacement with respect to a center point of the click wheel). The click wheel may also be used to select one or more of the displayed icons. For example, the user may press down on at least a portion of the click wheel or an associated button. User commands and navigation commands provided by the user via the click wheel may be processed by an input controller 160 as well as one or more of the modules and/or sets of instructions in memory 102 . For a virtual click wheel, the click wheel and click wheel controller may be part of the display system 112 and the display controller 156 , respectively. For a virtual click wheel, the click wheel may be either an opaque or semitransparent object that appears and disappears on the touch screen display in response to user interaction with the device. In some embodiments, a virtual click wheel is displayed on the touch screen of a portable multifunction device and operated by user contact with the touch screen. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0073] The device 100 also includes a power system 162 for powering the various components. The power system 162 may include a power management system, one or more power sources (e.g., battery, alternating current (AC)), a recharging system, a power failure detection circuit, a power converter or inverter, a power status indicator (e.g., a light-emitting diode (LED)) and any other components associated with the generation, management and distribution of power in portable devices. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0074] The device 100 may also include one or more optical sensors 164 . FIG. 1 shows an optical sensor coupled to an optical sensor controller 158 in I/O subsystem 106 . The optical sensor 164 may include charge-coupled device (CCD) or complementary metal-oxide semiconductor (CMOS) phototransistors. The optical sensor 164 receives light from the environment, projected through one or more lens, and converts the light to data representing an image. In conjunction with an imaging module 143 , the optical sensor 164 may capture still images or video. In some embodiments, an optical sensor is located on the back of the device 100 , opposite the touch screen display 112 on the front of the device, so that the touch screen display may be used as a viewfinder for either still and/or video image acquisition. In some embodiments, an optical sensor is located on the front of the device so that the user's image may be obtained for videoconferencing while the user views the other video conference participants on the touch screen display. In some embodiments, the position of the optical sensor 164 can be changed by the user (e.g., by rotating the lens and the sensor in the device housing) so that a single optical sensor 164 may be used along with the touch screen display for both video conferencing and still and/or video image acquisition. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0075] The device 100 may also include one or more proximity sensors 166 . FIG. 1 shows a proximity sensor 166 coupled to the peripherals interface 118 . Alternately, the proximity sensor 166 may be coupled to an input controller 160 in the I/O subsystem 106 . The proximity sensor 166 may perform as described in U.S. patent application Ser. Nos. 11/241,839, &ldquo;Proximity Detector In Handheld Device,&rdquo; filed Sep. 30, 2005, and 11/240,788, &ldquo;Proximity Detector In Handheld Device,&rdquo; filed Sep. 30, 2005, which are hereby incorporated by reference herein in their entirety. In some embodiments, the proximity sensor turns off and disables the touch screen 112 when the multifunction device is placed near the user's ear (e.g., when the user is making a phone call). In some embodiments, the proximity sensor keeps the screen off when the device is in the user's pocket, purse, or other dark area to prevent unnecessary battery drainage when the device is a locked state. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0076] In some embodiments, the software components stored in memory 102 may include an operating system 126 , a communication module (or set of instructions) 128 , a contact/motion module (or set of instructions) 130 , a graphics module (or set of instructions) 132 , a text input module (or set of instructions) 134 , a Global Positioning System (GPS) module (or set of instructions) 135 , and applications (or set of instructions) 136 . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0077] The operating system 126 (e.g., Darwin, RTXC, LINUX, UNIX, OS X, WINDOWS, or an embedded operating system such as VxWorks) includes various software components and/or drivers for controlling and managing general system tasks (e.g., memory management, storage device control, power management, etc.) and facilitates communication between various hardware and software components. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0078] The communication module 128 facilitates communication with other devices over one or more external ports 124 and also includes various software components for handling data received by the RF circuitry 108 and/or the external port 124 . The external port 124 (e.g., Universal Serial Bus (USB), FIREWIRE, etc.) is adapted for coupling directly to other devices or indirectly over a network (e.g., the Internet, wireless LAN, etc.). In some embodiments, the external port is a multi-pin (e.g., 30-pin) connector that is the same as, or similar to and/or compatible with the 30-pin connector used on iPod (trademark of Apple Computer, Inc.) devices. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0079] The contact/motion module 130 may detect contact with the touch screen in the display system 112 (in conjunction with the display controller 156 ) and other touch sensitive devices (e.g., a touchpad or physical click wheel). The contact/motion module 130 includes various software components for performing various operations related to detection of contact, such as determining if contact has occurred, determining if there is movement of the contact and tracking the movement across the touch screen in the display system 112 , and determining if the contact has been broken (i.e., if the contact has ceased). Determining movement of the point of contact may include determining speed (magnitude), velocity (magnitude and direction), and/or an acceleration (a change in magnitude and/or direction) of the point of contact. These operations may be applied to single contacts (e.g., one finger contacts) or to multiple simultaneous contacts (e.g., &ldquo;multitouch&rdquo;/multiple finger contacts). In some embodiments, the contact/motion module 130 and the display controller 156 also detects contact on a touchpad. In some embodiments, the contact/motion module 130 detects movement of one or more objects on or near the touch screen and/or the touchpad. In some embodiments, the contact/motion module 130 and the controller 160 detects contact on a click wheel 116 . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0080] The graphics module 132 includes various known software components for rendering and displaying graphics on the display system 112 , including components for changing the intensity of graphics that are displayed. As used herein, the term &ldquo;graphics&rdquo; includes any object that can be displayed to a user, including without limitation text, web pages, icons (such as user-interface objects including soft keys), digital images, videos, animations and the like. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0081] The text input module 134 , which may be a component of graphics module 132 , provides soft keyboards for entering text in various applications (e.g., contacts 137 , e-mail 140 , IM 141 , blogging 142 , browser 147 , and any other application that needs text input). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0082] The GPS module 135 determines the location of the device and provides this information for use in various applications (e.g., to telephone 138 for use in location-based dialing, to camera 143 and/or blogger 142 as picture/video metadata, and to applications that provide location-based services such as weather widgets, local yellow page widgets, and map/navigation widgets). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0083] The applications 136 may include the following modules (or sets of instructions), or a subset or superset thereof:
+ 
+ 
+ [0084] a contacts module 137 (sometimes called an address book or contact list); [0085] a telephone module 138 ; [0086] a video conferencing module 139 ; [0087] an e-mail client module 140 ; [0088] an instant messaging (IM) module 141 ; [0089] a blogging module 142 ; [0090] a camera module 143 for still and/or video images; [0091] an image management module 144 ; [0092] a video player module 145 ; [0093] a music player module 146 ; [0094] a browser module 147 ; [0095] a calendar module 148 ; [0096] widget modules 149 , which may include weather widget 149 - 1 , stocks widget 149 - 2 , calculator widget 149 - 3 , alarm clock widget 149 - 4 , dictionary widget 149 - 5 , and other widgets obtained by the user, as well as user-created widgets 149 - 6 ; [0097] widget creator module 150 for making user-created widgets 149 - 6 ; and/or search module 151 . 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0098] Examples of other applications 136 that may be stored in memory 102 include memo pad and other word processing applications, JAVA-enabled applications, encryption, digital rights management, voice recognition, and voice replication. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0099] In conjunction with display system 112 , display controller 156 , contact module 130 , graphics module 132 , and text input module 134 , the contacts module 137 may be used to manage an address book or contact list, including: adding name(s) to the address book; deleting name(s) from the address book; associating telephone number(s), e-mail address(es), physical address(es) or other information with a name; associating an image with a name; categorizing and sorting names; providing telephone numbers or e-mail addresses to initiate and/or facilitate communications by telephone 138 , video conference 139 , e-mail 140 , or IM 141 ; and so forth. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0100] In conjunction with RF circuitry 108 , audio circuitry 110 , speaker 111 , microphone 113 , display system 112 , display controller 156 , contact module 130 , graphics module 132 , and text input module 134 , the telephone module 138 may be used to enter a sequence of characters corresponding to a telephone number, access one or more telephone numbers in the address book 137 , modify a telephone number that has been entered, dial a respective telephone number, conduct a conversation and disconnect or hang up when the conversation is completed. As noted above, the wireless communication may use any of a plurality of communications standards, protocols and technologies. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0101] In conjunction with RF circuitry 108 , audio circuitry 110 , speaker 111 , microphone 113 , display system 112 , display controller 156 , optical sensor 164 , optical sensor controller 158 , contact module 130 , graphics module 132 , text input module 134 , contact list 137 , and telephone module 138 , the videoconferencing module 139 may be used to initiate, conduct, and terminate a video conference between a user and one or more other participants. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0102] In conjunction with RF circuitry 108 , display system 112 , display controller 156 , contact module 130 , graphics module 132 , and text input module 134 , the e-mail client module 140 may be used to create, send, receive, and manage e-mail. In conjunction with image management module 144 , the e-mail module 140 makes it very easy to create and send e-mails with still or video images taken with camera module 143 . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0103] In conjunction with RF circuitry 108 , display system 112 , display controller 156 , contact module 130 , graphics module 132 , and text input module 134 , the instant messaging module 141 may be used to enter a sequence of characters corresponding to an instant message, to modify previously entered characters, to transmit a respective instant message (for example, using a Short Message Service (SMS) or Multimedia Message Service (MMS) protocol), to receive instant messages and to view received instant messages. In some embodiments, transmitted and/or received instant messages may include graphics, photos, audio files, video files and/or other attachments as are supported in a MMS and/or an Enhanced Messaging Service (EMS). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0104] In conjunction with RF circuitry 108 , display system 112 , display controller 156 , contact module 130 , graphics module 132 , text input module 134 , image management module 144 , and browsing module 147 , the blogging module 142 may be used to send text, still images, video, and/or other graphics to a blog (e.g., the user's blog). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0105] In conjunction with display system 112 , display controller 156 , optical sensor(s) 164 , optical sensor controller 158 , contact module 130 , graphics module 132 , and image management module 144 , the camera module 143 may be used to capture still images or video (including a video stream) and store them into memory 102 , modify characteristics of a still image or video, or delete a still image or video from memory 102 . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0106] In conjunction with display system 112 , display controller 156 , contact module 130 , graphics module 132 , text input module 134 , and camera module 143 , the image management module 144 may be used to arrange, modify or otherwise manipulate, label, delete, present (e.g., in a digital slide show or album), and store still and/or video images. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0107] In conjunction with display system 112 , display controller 156 , contact module 130 , graphics module 132 , audio circuitry 110 , and speaker 111 , the video player module 145 may be used to display, present or otherwise play back videos (e.g., on the touch screen or on an external, connected display via external port 124 ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0108] In conjunction with display system 112 , display system controller 156 , contact module 130 , graphics module 132 , audio circuitry 110 , speaker 111 , RF circuitry 108 , and browser module 147 , the music player module 146 allows the user to download and play back recorded music and other sound files stored in one or more file formats, such as MP3 or AAC files. In some embodiments, the device 100 may include the functionality of an MP3 player, such as an iPod (trademark of Apple Computer, Inc.). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0109] In conjunction with RF circuitry 108 , display system 112 , display system controller 156 , contact module 130 , graphics module 132 , and text input module 134 , the browser module 147 may be used to browse the Internet, including searching, linking to, receiving, and displaying web pages or portions thereof, as well as attachments and other files linked to web pages. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0110] In conjunction with RF circuitry 108 , display system 112 , display system controller 156 , contact module 130 , graphics module 132 , text input module 134 , e-mail module 140 , and browser module 147 , the calendar module 148 may be used to create, display, modify, and store calendars and data associated with calendars (e.g., calendar entries, to do lists, etc.). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0111] In conjunction with RF circuitry 108 , display system 112 , display system controller 156 , contact module 130 , graphics module 132 , text input module 134 , and browser module 147 , the widget modules 149 are mini-applications that may be downloaded and used by a user (e.g., weather widget 149 - 1 , stocks widget 149 - 2 , calculator widget 149 - 3 , alarm clock widget 149 - 4 , and dictionary widget 149 - 5 ) or created by the user (e.g., user-created widget 149 - 6 ). In some embodiments, a widget includes an HTML (Hypertext Markup Language) file, a CSS (Cascading Style Sheets) file, and a JavaScript file. In some embodiments, a widget includes an XML (Extensible Markup Language) file and a JavaScript file (e.g., Yahoo! Widgets). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0112] In conjunction with RF circuitry 108 , display system 112 , display system controller 156 , contact module 130 , graphics module 132 , text input module 134 , and browser module 147 , the widget creator module 150 may be used by a user to create widgets (e.g., turning a user-specified portion of a web page into a widget). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0113] In conjunction with display system 112 , display system controller 156 , contact module 130 , graphics module 132 , and text input module 134 , the search module 151 may be used to search for text, music, sound, image, video, and/or other files in memory 102 that match one or more search criteria (e.g., one or more user-specified search terms). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0114] Each of the above identified modules and applications correspond to a set of instructions for performing one or more functions described above. These modules (i.e., sets of instructions) need not be implemented as separate software programs, procedures or modules, and thus various subsets of these modules may be combined or otherwise re-arranged in various embodiments. In some embodiments, memory 102 may store a subset of the modules and data structures identified above. Furthermore, memory 102 may store additional modules and data structures not described above. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0115] In some embodiments, the device 100 is a device where operation of a predefined set of functions on the device is performed exclusively through a touch screen in the display system 112 and/or a touchpad. By using a touch screen and/or a touchpad as the primary input/control device for operation of the device 100 , the number of physical input/control devices (such as push buttons, dials, and the like) on the device 100 may be reduced. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0116] The predefined set of functions that may be performed exclusively through a touch screen and/or a touchpad includes navigation between user interfaces. In some embodiments, the touchpad, when touched by the user, navigates the device 100 to a main, home, or root menu from any user interface that may be displayed on the device 100 . In such embodiments, the touchpad may be referred to as a &ldquo;menu button.&rdquo; In some other embodiments, the menu button may be a physical push button or other physical input/control device instead of a touchpad. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0117] FIG. 2 illustrates a portable multifunction device 100 having a touch screen 112 in accordance with some embodiments. The touch screen may display one or more graphics. In this embodiment, as well as others described below, a user may select one or more of the graphics by making contact or touching the graphics, for example, with one or more fingers 202 (not drawn to scale in the figure). In some embodiments, selection of one or more graphics occurs when the user breaks contact with the one or more graphics. In some embodiments, the contact may include a gesture, such as one or more taps, one or more swipes (from left to right, right to left, upward and/or downward) and/or a rolling of a finger (from right to left, left to right, upward and/or downward) that has made contact with the device 100 . In some embodiments, inadvertent contact with a graphic may not select the graphic. For example, a swipe gesture that sweeps over an application icon may not select the corresponding application when the gesture corresponding to selection is a tap. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0118] The device 100 may also include one or more physical buttons, such as &ldquo;home&rdquo; or menu button 204 . As described previously, the menu button 204 may be used to navigate to any application 136 in a set of applications that may be executed on the device 100 . Alternatively, in some embodiments, the menu button is implemented as a soft key in a GUI in touch screen 112 . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0119] In one embodiment, the device 100 includes a touch screen 112 , a menu button 204 , a push button 206 for powering the device on/off and locking the device, and volume adjustment button(s) 208 . The push button 206 may be used to turn the power on/off on the device by depressing the button and holding the button in the depressed state for a predefined time interval; to lock the device by depressing the button and releasing the button before the predefined time interval has elapsed; and/or to unlock the device or initiate an unlock process. In an alternative embodiment, the device 100 also may accept verbal input for activation or deactivation of some functions through the microphone 113 . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0120] Attention is now directed towards embodiments of user interfaces (&ldquo;UI&rdquo;) and associated processes that may be implemented on a portable multifunction device 100 and/or on a device 1700 with a touch-screen display ( FIG. 17 ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0121] FIG. 3 illustrates an exemplary user interface for unlocking a portable electronic device in accordance with some embodiments. In some embodiments, user interface 300 includes the following elements, or a subset or superset thereof:
+ 
+ 
+ [0122] Unlock image 302 that is moved with a finger gesture to unlock the device; [0123] Arrow 304 that provides a visual cue to the unlock gesture; [0124] Channel 306 that provides additional cues to the unlock gesture; [0125] Time 308 ; [0126] Day 310 ; [0127] Date 312 ; and [0128] Wallpaper image 314 . 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0129] In some embodiments, the device detects contact with the touch-sensitive display (e.g., a user's finger making contact on or near the unlock image 302 ) while the device is in a user-interface lock state. The device moves the unlock image 302 in accordance with the contact. The device transitions to a user-interface unlock state if the detected contact corresponds to a predefined gesture, such as moving the unlock image across channel 306 . Conversely, the device maintains the user-interface lock state if the detected contact does not correspond to the predefined gesture. As noted above, processes that use gestures on the touch screen to unlock the device are described in U.S. patent application Ser. No. 11/322,549, &ldquo;Unlocking a Device by Performing Gestures on an Unlock Image,&rdquo; filed Dec. 23, 2005, which is hereby incorporated by reference herein in its entirety. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0130] FIG. 4 illustrates an exemplary user interface for a menu of applications on a portable multifunction device in accordance with some embodiments. In some embodiments, user interface 400 includes the following elements, or a subset or superset thereof:
+ 
+ 
+ [0131] Signal strength indicator 402 for wireless communication; [0132] Time 404 ; [0133] Battery status indicator 406 ; [0134] Tray 408 with icons for frequently used applications, such as one or more of the following:
+   [0135] Phone 138 ; [0136] E-mail client 140 , which may include an indicator 410 of the number of unread e-mails; [0137] Browser 147 ; and [0138] Music player 146 ; and 
+  [0139] Icons for other applications, such as one or more of the following:
+   [0140] IM 141 ; [0141] Image management 144 ; [0142] Camera 143 ; [0143] Video player 145 ; [0144] Weather 149 - 1 ; [0145] Stocks 149 - 2 ; [0146] Blog 142 ; [0147] Calendar 148 ; [0148] Calculator 149 - 3 ; [0149] Alarm clock 149 - 4 ; [0150] Dictionary 149 - 5 ; and [0151] User-created widget 149 - 6 . 
+  
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0152] In some embodiments, UI 400 displays all of the available applications 136 on one screen so that there is no need to scroll through a list of applications (e.g., via a scroll bar or via a swipe gesture). In some embodiments, as the number of applications increases, the icons corresponding to the applications may decrease in size so that all applications may be displayed on a single screen without scrolling. In some embodiments, having all applications on one screen and a menu button enables a user to access any desired application with at most two inputs, such as activating the menu button 204 and then activating the desired application (e.g., by a tap or other finger gesture on the icon corresponding to the application). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0153] In some embodiments, UI 400 provides integrated access to both widget-based applications and non-widget-based applications. In some embodiments, all of the widgets, whether user-created or not, are displayed in UI 400 . In other embodiments, activating the icon for user-created widget 149 - 6 may lead to another UI (not shown) that contains the user-created widgets or icons corresponding to the user-created widgets. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0154] In some embodiments, a user may rearrange the icons in UI 400 , e.g., using processes described in U.S. patent application Ser. No. 11/459,602, &ldquo;Portable Electronic Device With Interface Reconfiguration Mode,&rdquo; filed Jul. 24, 2006, which is hereby incorporated by reference herein in its entirety. For example, a user may move application icons in and out of tray 408 using finger gestures. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0155] In some embodiments, UI 400 includes a gauge (not shown) that displays an updated account usage metric for an account associated with usage of the device (e.g., a cellular phone account), as described in U.S. patent application Ser. No. 11/322,552, &ldquo;Account Information Display For Portable Communication Device,&rdquo; filed Dec. 23, 2005, which is hereby incorporated by reference herein in its entirety. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0156] As discussed above, UI 400 may display all of the available applications 136 on one screen so that there is no need to scroll through a list of applications. However, in some embodiments a touch-sensitive display may include a GUI with one or more windows that display only a portion of a list of items (e.g., information items) or of an electronic document. In response to detecting a movement of an object on or near the touch-sensitive display, the list may be scrolled or the electronic document may be translated. Detecting the movement of the object may include determining speed (magnitude), velocity (magnitude and direction), and/or an acceleration (including magnitude and/or direction) of the object. Scrolling through the list or translating the document may be accelerated in response to an accelerated movement of the object. In some embodiments, the scrolling and acceleration of the scrolling, or translation and acceleration of the translation, may be in accordance with a simulation of a physical device having friction, i.e., damped motion. For example, the scrolling or translation may correspond to a simulation of a force law or equation of motion having a mass or inertial term, as well as a dissipative term. In some embodiments, the simulation may correspond to a cylinder rotating about its axis. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0157] In some embodiments, accelerated movement of the detected object may include an accelerated movement of a point of contact followed by a breaking of the point of contact. For example, the user may make contact with the touch-sensitive display, swipe or sweep one or more of his or her fingers along the display (i.e., move and/or accelerate the point of contact), and optionally, break the point of contact with the display, i.e., move the one or more fingers away from the display. The swipe or sweep may be along a predefined axis of the touch-sensitive display or may be within a predetermined angle of a predefined direction on the touch-sensitive display. In other embodiments, the accelerated movement of the point of contact may include a first user gesture oriented along a predefined axis of the touch-sensitive display or oriented within a predetermined angle of a predefined direction on the touch-sensitive display. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0158] Scrolling through the list of items or translating the electronic document may be further accelerated in response to detection of a second movement of an object on or near the touch-sensitive display, such as a second sweeping motion of the point of contact along the predefined axis or within the predetermined angle of a predefined direction on the touch-sensitive display and/or a second user gesture oriented along the predefined axis or within the predetermined angle of a predefined direction on the touch-sensitive display. For example, the user may swipe one or more of his or her fingers along the touch-sensitive display two or more times. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0159] The scrolling through the list of items or the translation of the electronic document may be stopped in accordance with the user breaking the point of contact and then establishing a substantially stationary point of contact with the touch-sensitive display for at least a pre-determined period of time. For example, after swiping one or more of his or her fingers along the touch-sensitive display and breaking the point of contact, the user may touch the display and hold the one or more fingers that are touching the display stationary (or approximately stationary) for one or more seconds, or fractions of a second. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0160] The direction of scrolling or translation may be reversed in response to intersecting a virtual boundary corresponding to a terminus of the list or an edge of the electronic document. The scrolling reversal or translation reversal may correspond to a damped motion. For example, during scrolling, a displayed portion of the list of items may appear to bounce off of a boundary of the window in the touch-sensitive display when a beginning or an end of the list of items is reached. Similarly, during translation, a displayed portion of the electronic document may appear to bounce off of a boundary of the window in the touch-sensitive display when an edge of the document is reached. The apparent bounce may correspond to a simulation of a viscous or elastic ball having momentum in a first direction striking an immovable and/or inelastic object, such as a wall. The subsequent motion of the document (the motion of which corresponds to the ball in the aforementioned analogy) may be damped, for example, by including a friction or dissipative term in the simulation. A parameter corresponding to the friction term in the simulation may be adjustable, allowing the document to reach equilibrium in contact with the virtual boundary, or displaced from the virtual boundary. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0161] In some embodiments movement of the point of contact by the user over an index on the touch-sensitive display may be determined. In some embodiments, the index may be displayed in a first region or a first window of the touch-sensitive display while the list of items or information items during the scrolling may be displayed in a second region or a second window of the touch-sensitive display. The displayed index may have a sequence of index items. In an exemplary embodiment, the sequence of index items may include letters in the alphabet, i.e., the index may include an alphabetical index. The list of information items may include an alphabetically ordered list of information items. The alphabetically ordered list of information items may include contact information, for example, in a user's contact list or address book. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0162] In response to movement of the user's point of contact over a displayed index, the list of information items on the touch-sensitive display may be scrolled. The list of information items may include a sequence of information item subsets corresponding to the sequence of index items. The subsets may include one or more categories. For example, a respective category may include contact information for one or more individuals whose first and/or last names begin with one or more respective letters, such as the letter &lsquo;s&rsquo;. In an exemplary embodiment, there is a subset corresponding to each letter in the alphabet that has one or more entries. In some embodiments, the scrolling may be in accordance with a simulation of an equation of motion having friction. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0163] The scrolling may include scrolling through a respective information item subset if the point of contact moves over a corresponding respective index item in the index items. The scrolling may have an associated scroll speed based on a speed of movement of the point of contact over the respective index item and the number of items in the information item subset corresponding to the respective index item. For example, the scroll speed may be faster for subsets that have more entries than subsets with fewer entries. The scrolling may include scrolling through all items in a plurality of the information item subsets in response to the point of contact moving over the corresponding index items in the displayed index. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0164] If it is determined that the point of contact with the index corresponds to a respective index item in the index, the list of information items may be scrolled to a corresponding subset of the list of information items. For example, if the user selects an index item, such as the letter &lsquo;R&rsquo;, in the set of index symbols, the list of items may be smoothly scrolled to the corresponding subset for the letter &lsquo;R&rsquo; in the list of items. Alternatively, the displayed list of information items jump directly from a current scroll position to a scroll position in which information items corresponding to the index item &lsquo;R&rsquo; are displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0165] In the present document, the term &ldquo;if&rdquo; may be construed to mean &ldquo;when,&rdquo; or &ldquo;upon,&rdquo; or &ldquo;in response to determining,&rdquo; or &ldquo;in response to detecting,&rdquo; depending on the context Similarly, the phrase &ldquo;if it is determined&rdquo; or &ldquo;if [a stated condition or event] is detected&rdquo; may be construed to mean &ldquo;upon determining&rdquo; or &ldquo;in response to determining&rdquo; or &ldquo;upon detecting&rdquo; the stated condition or event, or &ldquo;in response to detecting&rdquo; the stated condition or event, depending on the context. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0166] If the point of contact with the touch-sensitive display corresponds to a user selection of a respective information item in the list of information items, information corresponding to the respective information item may be displayed on the touch-sensitive display. For example, if the user selects a respective name, the corresponding contact information may be displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0167] While scrolling through respective information subsets, an index symbol may displayed in conjunction with each respective information item subset. In some embodiments, respective index symbols may be displayed adjacent to corresponding subsets (such as displayed text) of the list of information items. In some embodiments, a respective index symbol may be displayed at an upper edge of a window containing the displayed text of the respective information item subset. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0168] The index symbol corresponding to a respective information subset may be translucently displayed over the respective information item subset. The translucently displayed index symbol may have a different font color than that used to display text in the information item subset, and/or it may be displayed using a larger font than the font used to display text in the information item subset. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0169] If the list of information items contains no items for a particular index symbol, i.e., no entries for a particular subset, a first index symbol preceding a particular index symbol and a second index symbol following the index symbol may be displayed in conjunction with scrolling through the list of information items from the information subset corresponding to the first index symbol to the information subset corresponding to the second index symbol. The particular index symbol may not be displayed in conjunction with the displayed text of the list of information items during the scroll through. For example, display of a respective index symbol may be skipped when the list of information items contains no items for the particular index symbol. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0170] In some embodiments, the list scrolling described here operates without displaying a scroll bar. Similarly, in some embodiments, the translation of electronic documents described here operates without displaying scroll bars. The user's sweeping motion on the touch-sensitive display operation may be performed directly on top of the displayed list or displayed electronic document, and may include a sweeping or gliding motion, near or in contact with the display's surface, along a path anywhere within a display window in which the list or electronic document is displayed. While a scroll bar could potentially be displayed in conjunction with the displayed list, the scrolling or translation described here can be independent of any such scroll bar. In some embodiments, if a scroll bar is used, then an upward movement of a point of contact on the scroll bar may cause earlier entries in the list to be displayed, whereas a downward movement of the point of contact on the scroll bar may cause later entries in the list to be displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0171] In some embodiments, scrolling or translation may be in accordance with a speed of movement of a detected object, such as a speed of movement of a point of contact. The speed may be a time average of values determined during several time intervals. In an exemplary embodiment, the speed, velocity and/or acceleration may be determined over five time intervals, where a respective time interval corresponds to an inverse of a frame rate, such as 0.0167 s, of a display. In some embodiments, the speed, velocity and/or acceleration may be determined even when a variable frame rate is used, such as when one or more frames are skipped or not displayed. In these embodiments, the speed, velocity, and/or acceleration may be determined two or more times for the respective time interval and/or may be projected based on values determined in a preceding and/or a subsequent time interval. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0172] In some embodiments, the scrolling or translation after a user optionally breaks the contact may be in accordance with the change in the acceleration and the speed or the velocity in one or more time intervals prior to the breaking of the contact. For example, the velocity v f of scrolling or translation one or more time intervals after breaking contact may be determined using
+ 
+   v f =v o +αΔt, 
+
+ 
+where v o is a current value of the velocity when the contact is broken, a is a current value of the acceleration when the contact is broken and Δt is an elapsed time, such as one time interval. The velocities and/or acceleration in such a calculation may be projected along an axis or direction of the scrolling or translation. In some embodiments, in subsequent time intervals following the determination of the velocity based on the acceleration and/or the velocity in one or more time intervals prior to the breaking of the contact, the velocity of the scrolling or translation may be tapered. For example, in each successive time interval the velocity may be decreased by 5%. When the velocity crosses a lower threshold, it may be set to zero.
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0173] FIG. 5 is a flow diagram illustrating a method 500 of scrolling through a list in accordance with some embodiments. The method 500 provides a simple visual indicator to a user that a terminus of a list has been reached. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0174] Movement of an object is detected on or near a touch screen display of a device ( 502 ). In some embodiments, the object is a finger. In some embodiments, the device is a portable multifunction device. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0175] In response to detecting the movement, a list of items displayed on the touch screen display is scrolled in a first direction ( 504 ). In some embodiments, the list is a list of email messages, as illustrated in FIGS. 6A-6D . In some embodiments, the list of items is a list of instant message conversations, a list of favorite phone numbers, a list of contact information (sometimes called a contact list or address book list), a list of labels, a list of email folders, a list of email addresses, a list of physical addresses, a list of ringtones, a list of album names, or a list of bookmarks. In some embodiments, the first direction is a vertical direction; in some other embodiments, the first direction is a horizontal direction. In some embodiments, scrolling the list in the first direction prior to reaching a terminus of the list has an associated scrolling speed corresponding to a speed of movement of the object ( 506 ). In some embodiments, the list is scrolled in accordance with a simulation of an equation of motion having friction ( 508 ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0176] If a terminus of the list is reached (e.g., upon reaching the terminus of the list) while scrolling the list in the first direction while the object is still detected on or near the touch screen display, an area beyond the terminus of the list is displayed ( 510 -Yes, 514 ). In some embodiments, the list has a first item and a last item and the terminus is either the first item or the last item. For example, in FIG. 6B the email 3534 from Aaron Jones is the first item and thus the terminus of the corresponding list of emails. In some embodiments, the area beyond the terminus of the list is white ( 516 ). In some embodiments, the list of items has a background and the area beyond the terminus of the list is visually indistinct from the background ( 518 ). For example, in FIG. 6C both the area 3536 and the background of the listed emails are white. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0177] After the object is no longer detected on or near the touch screen display, the list of items is scrolled in a second direction opposite the first direction until the area beyond the terminus of the list is no longer displayed ( 520 ). In some embodiments, the list is scrolled in the second direction using a damped motion ( 522 ). In some embodiments, the change from scrolling the list in the first direction to scrolling the list in the second direction until the area beyond the terminus of the list is no longer displayed makes the terminus of the list appear to be elastically attached to an edge of the touch screen display or to an edge displayed on the touch screen display ( 524 ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0178] In some embodiments, scrolling in the first direction prior to reaching the terminus of the list has a first associated scrolling distance that corresponds to a distance of movement of the object prior to reaching the terminus of the list. For example, a scrolling distance prior to reaching the terminus of the list shown in FIGS. 6A-6D may correspond to a distance traversed on the touch screen display by the swipe gesture 3514 before the terminus is reached. Displaying an area beyond the terminus of the list includes scrolling the list in the first direction for a second associated scrolling distance that is less than a distance of movement of the object after the terminus is reached. For example, in FIG. 6C , after the terminus is reached the list is scrolled for a distance 3538 , which may be less than a distance traversed on the touch screen display by the swipe gesture 3514 after the terminus is reached. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0179] In some embodiments, scrolling in the first direction prior to reaching a terminus of the list has a first associated scrolling speed that corresponds to a speed of movement of the object. For example, a scrolling speed prior to reaching the terminus of the list shown in FIGS. 6A-6D may correspond to a speed on the touch screen display of the swipe gesture 3514 before the terminus is reached. Displaying an area beyond the terminus of the list includes scrolling the list in the first direction at a second associated scrolling speed. The second associated scrolling speed is slower than the first associated scrolling speed. For example, in FIG. 6C , displaying the area 3536 beyond the terminus of the list may include scrolling the list at a speed that is slower than the scrolling speed before the terminus is reached. In some embodiments, the second associated speed is a fraction (e.g., one-half or one-third) of the first associated speed. In some embodiments, the second associated speed is the square root of the first associated speed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0180] If a terminus of the list is not reached while scrolling the list in the first direction while the object is still detected on or near the touch screen display, the process 500 is complete ( 510 -No, 512 ). The process 500 may be re-initiated upon subsequent detection of another movement of an object on or near the touch screen display ( 502 ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0181] FIGS. 6A-6D illustrate the scrolling of a list of items to a terminus of the list, at which point an area beyond the terminus is displayed and the list is then scrolled in an opposite direction until the area beyond the terminus is no longer displayed, in accordance with some embodiments. While FIGS. 6A-6D illustrate this scrolling in the context of a portable multifunction device 100 , this scrolling is not limited to portable multifunction devices. In the example of FIGS. 6A-6D , the listed items are email messages; FIGS. 6A-6D illustrate an exemplary user interface 3500 A for managing an inbox in accordance with some embodiments. An analogous user interface may be used to display and manage other mailboxes (e.g., drafts, sent, trash, personal, etc.). In addition, other types of lists are possible, including but not limited to lists of instant message conversations, favorite phone numbers, contact information, labels, email folders, email addresses, physical addresses, ringtones, album names or bookmarks. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0182] In some embodiments, user interface 3500 A include the following elements, or a subset or superset thereof:
+ 
+ 
+ [0183] 402 , 404 , and 406 , as described above; [0184] a create email icon 3310 that when activated (e.g., by a finger tap on the icon) initiates display of a UI to create a new email message; [0185] mailboxes icon 3502 that when activated (e.g., by a finger tap on the icon) initiates the display of a UI listing email mailboxes (i.e., folders); [0186] unread messages icon 3504 that displays the number of unread messages in the inbox; [0187] names 3506 of the senders of the email messages; [0188] subject lines 3508 for the email messages; [0189] dates 3510 of the email messages; [0190] unread message icons 3512 that indicate messages that have not been opened; [0191] preview pane separator 3518 that separates the list of messages from a preview of a selected message in the list; [0192] settings icon 3520 that when activated (e.g., by a finger tap on the icon) initiates the display of a UI to modify settings; [0193] move message icon 3522 that when activated (e.g., by a finger tap on the icon) initiates the display of a UI to move messages; [0194] Delete symbol icon 3524 that when activated (e.g., by a finger tap on the icon) initiates display of a UI to confirm that the user wants to delete the selected email; [0195] Reply/Forward icon 3526 that when activated (e.g., by a finger tap on the icon) initiates display of a UI to select how to reply or forward the selected email; 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0196] If the list of emails fills more than the allotted screen area, the user may scroll through the emails using vertically upward and/or vertically downward swipe gestures on the touch screen. In the example of FIG. 6A , a portion of a list of emails is displayed in the screen area, including a top displayed email 3530 from Bruce Walker and a bottom displayed email 3532 from Kim Brook. A user performs a vertically downward swipe gesture 3514 to scroll toward the top of the list. The vertically downward gesture 3514 , which may be a finger gesture, corresponds to the movement of an object on or near the touch screen that is detected in operation 502 of process 500 ( FIG. 5 ). The vertically downward gesture 3514 need not be exactly vertical; a substantially vertical gesture is sufficient. In some embodiments, a gesture within a predetermined angle of being perfectly vertical results in vertical scrolling. In one embodiment, a gesture within 27 degrees of being perfectly vertical results in vertical scrolling. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0197] As a result of detecting the vertically downward gesture 3514 , in FIG. 6B the displayed emails have shifted down, such that the previous bottom displayed email 3532 from Kim Brook is no longer displayed, the previous top displayed email 3530 from Bruce Walker is now second from the top, and the email 3534 from Aaron Jones, which was not displayed in FIG. 6A , is now displayed at the top of the list. This shifting of emails is an example of the scrolling described in operation 504 of process 500 ( FIG. 5 ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0198] In this example, the email 3534 from Aaron Jones is the first email in the list and thus is the terminus of the list. Upon reaching this email 3534 , in response to continued detection of the vertically downward gesture 3514 , an area 3536 ( FIG. 6C ) above the first email 3534 (i.e., beyond the terminus of the list) is displayed, as described in operation 514 of process 500 ( FIG. 5 ). In some embodiments, the area displayed beyond the terminus of the list is visually indistinct from the background of the list, as described in operation 518 of process 500 ( FIG. 5 ). In FIG. 6C , both the area 3536 and the background of the emails (e.g., emails 3534 and 3530 ) are white and thus are visually indistinct. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0199] Once vertically downward gesture 3514 is complete, such that a corresponding object is no longer detected on or near the touch screen display, the list is scrolled in an opposite direction until the area 3536 is no longer displayed. FIG. 6D illustrates the result of this scrolling in the opposite direction, which corresponds to operation 520 of process 500 ( FIG. 5 ): the email 3534 from Aaron Jones is now displayed at the top of the screen area allotted to the list and the area 3536 is not displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0200] In the example of FIGS. 6A-6D , a vertically downward gesture resulted in display of an area beyond the first item in the list. Similarly, a vertically upward gesture may result in display of an area beyond the last item of the list, if the vertically upward gesture continues once the list has been scrolled to the last item. The last item may be considered a terminus of the list, similar to the first item. As discussed above, the gesture need not be exactly vertical to result in vertical scrolling; a gesture within a predefined range of angles from perfectly vertical is sufficient. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0201] In some embodiments, instead of scrolling a list of items in one dimension, a user may desire to translate an electronic document in two dimensions. If the electronic document fills more than the screen area allotted to display the document, the screen will only display a portion of the document. The user may translate the electronic document to view portions of the document that are not initially displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0202] FIG. 7 is a flow diagram illustrating a method 700 of translating an electronic document in accordance with some embodiments. The method 700 provides a simple visual indicator to a user that one or more edges of an electronic document are being displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0203] Movement of an object is detected on or near a touch screen display of a device ( 702 ). In some embodiments, the object is a finger. In some embodiments, the device is a portable multifunction device. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0204] In response to detecting the movement, an electronic document displayed on the touch screen display is translated in a first direction ( 704 ). In some embodiments, the electronic document is a web page, as illustrated in FIGS. 8A-8D . In some embodiments, the electronic document is a digital image. In some embodiments, the electronic document is a word processing, spreadsheet, email, or presentation document. In some embodiments, the first direction is a vertical direction, a horizontal direction, or a diagonal direction. In some embodiments, the first direction corresponds to the direction of movement of the object detected on or near the display but is not necessarily identical to the direction of movement of the object. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0205] In some embodiments, translating the electronic document in the first direction prior to reaching an edge of the electronic document has an associated speed of translation corresponding to a speed of movement of the object ( 706 ). In some embodiments, the electronic document is translated in accordance with a simulation of an equation of motion having friction ( 708 ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0206] If an edge of the electronic document is reached (e.g., upon reaching the edge of the document) while translating the electronic document in the first direction while the object is still detected on or near the touch screen display, an area beyond the edge of the electronic document is displayed ( 710 -Yes, 714 ). In some embodiments, the area beyond the edge of the electronic document is black, gray, a solid color, or white ( 716 ). In some embodiments, the area beyond the edge of the electronic document is visually distinct from the document ( 718 ). For example, the area 3930 beyond the edge of the web page 3912 in FIG. 8C is black, in contrast to the white background of the web page 3912 . In some other embodiments, a wallpaper image such as a picture or pattern may be displayed in the area beyond the edge of the electronic document. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0207] After the object is no longer detected on or near the touch screen display, the electronic document is translated in a second direction until the area beyond the edge of the electronic document is no longer displayed ( 720 ). For example, in FIG. 8D the web page 3912 has been translated such that the area 3930 beyond its edge is no longer displayed. In some embodiments, the second direction is opposite the first direction. In some embodiments, the electronic document is translated in the second direction using a damped motion ( 722 ). In some embodiments, the change from translating the electronic document in the first direction to translating the electronic document in the second direction until the area beyond the edge of the electronic document is no longer displayed makes the edge of the electronic document appear to be elastically attached to an edge of the touch screen display or to an edge displayed on the touch screen display ( 724 ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0208] In some embodiments, translating in the first direction prior to reaching an edge of the electronic document has a first associated translating distance that corresponds to a distance of movement of the object prior to reaching the edge of the electronic document. For example, a distance of translation of the web page 3912 shown in FIGS. 8A-8D prior to reaching the edge of the document may correspond to a distance traversed on the touch screen display by the swipe gesture 3925 before the edge is reached. In some embodiments, displaying an area beyond the edge of the electronic document includes translating the electronic document in the first direction for a second associated translating distance, wherein the second associated translating distance is less than a distance of movement of the object after reaching the edge of the electronic document. For example, in FIG. 8C , after the edge is reached the web page 3912 is translated by a distance indicated by opposing arrows 3928-1 and 3928-2, which may be less than a distance traversed on the touch screen display by the swipe gesture 3925 after the terminus is reached. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0209] In some embodiments, translating in the first direction prior to reaching an edge of the electronic document has a first associated translating speed that corresponds to a speed of movement of the object. For example, a speed of translation prior to reaching the edge of the web page 3912 shown in FIGS. 8A-8D may correspond to a speed of movement of the swipe gesture 3925 . Displaying an area beyond the edge of the electronic document includes translating the electronic document in the first direction at a second associated translating speed. The second associated translating speed is slower than the first associated translating speed. For example, in FIG. 8C , displaying the area 3930 beyond the edge of the web page 3912 may include translating the web page 3912 at a speed that is slower than the speed of translation before the edge is reached. In some embodiments, the second associated speed is a fraction (e.g., one-half or one-third) of the first associated speed. In some embodiments, the second associated speed is the square root of the first associated speed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0210] If an edge of the electronic document is not reached while translating the electronic document in the first direction while the object is still detected on or near the touch screen display, the process 700 is complete ( 710 -No, 712 ). The process 700 may be re-initiated upon subsequent detection of another movement of an object on or near the touch screen display ( 702 ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0211] FIGS. 8A-8D illustrate the translation of an electronic document to an edge of the document, at which point an area beyond the edge is displayed and the document is then translated in a second direction until the area beyond the edge of the document is no longer displayed, in accordance with some embodiments. While FIGS. 8A-8D illustrate this translation in the context of a portable multifunction device 100 , this translation is not limited to portable multifunction devices. In the example of FIGS. 8A-8D , the document is a web page 3912 ; FIGS. 8A-8D illustrate an exemplary user interface for a browser in accordance with some embodiments. An analogous user interface may be used to display other types of electronic documents, such as word processing, spreadsheet, email, presentation documents, or digital images. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0212] In some embodiments, user interface 3900 A of FIGS. 8A-8D includes the following elements, or a subset or superset thereof:
+ 
+ 
+ [0213] 402 , 404 , and 406 , as described above; [0214] Previous page icon 3902 that when activated (e.g., by a finger tap on the icon) initiates display of the previous web page; [0215] Web page name 3904 ; [0216] Next page icon 3906 that when activated (e.g., by a finger tap on the icon) initiates display of the next web page; [0217] URL (Uniform Resource Locator) entry box 3908 for inputting URLs of web pages; [0218] Refresh icon 3910 that when activated (e.g., by a finger tap on the icon) initiates a refresh of the web page; [0219] Web page 3912 or other structured document, which is made of blocks 3914 of text content and other graphics (e.g., images); [0220] Settings icon 3916 that when activated (e.g., by a finger tap on the icon) initiates display of a settings menu for the browser; [0221] Bookmarks icon 3918 that when activated (e.g., by a finger tap on the icon) initiates display of a bookmarks list or menu for the browser; [0222] Add bookmark icon 3920 that when activated (e.g., by a finger tap on the icon) initiates display of a UI for adding bookmarks; and [0223] New window icon 3922 that when activated (e.g., by a finger tap on the icon) initiates display of a UI for adding new windows to the browser. 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0224] In some embodiments, the device analyzes the render tree of the web page 3912 to determine the blocks 3914 in the web page. In some embodiments, a block 3914 corresponds to a render node that is: replaced; a block; an inline block; or an inline table. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0225] In FIG. 8A , the web page fills more than the allotted screen area: only the left sides of block 7 ( 3914 - 7 ) and block 8 ( 3914 - 8 ) are displayed and only the top left corner of block 9 ( 3914 - 9 ) is displayed. To view the partially displayed blocks, a user may translate the displayed document by gesturing on the touch screen in accordance with some embodiments. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0226] In some embodiments, in response to a substantially vertical upward (or downward) swipe gesture by the user, the web page (or, more generally, other electronic documents) may translate one-dimensionally upward (or downward) in the vertical direction. In some embodiments, a gesture is considered substantially vertical if it is within a predetermined angle of being perfectly vertical. For example, in response to an upward swipe gesture by the user that is within a predetermined angle (e.g., 27&deg;) of being perfectly vertical, the web page may scroll one-dimensionally upward in the vertical direction. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0227] Conversely, in some embodiments, in response to a gesture that is not within a predetermined angle (e.g., 27&deg;) of being perfectly vertical, the web page may translate two-dimensionally (i.e., with simultaneous movement in both the vertical and horizontal directions). For example, in response to an upward swipe gesture by the user that is not within a predetermined angle (e.g., 27&deg;) of being perfectly vertical, the web page may translate two-dimensionally along the direction of the swipe. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0228] In the example of FIG. 8A , an upward swipe gesture 3925 is not within a predetermined angle of being perfectly vertical. Therefore, as a result of detecting the upward swipe gesture 3925 , the web page is translated in two dimensions. In this example, the translation is approximately diagonal. FIG. 8B illustrates the result of this translation: blocks 8 ( 3914 - 8 ) and 9 ( 3914 - 9 ) are now fully displayed; blocks 1 ( 3914 - 1 ) and 2 ( 3914 - 2 ) are now only partially displayed, and block 3 ( 3914 - 3 ) is no longer displayed at all. This translation is an example of the translation described in operation 704 of process 700 ( FIG. 7 ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0229] In FIG. 8B , block 9 ( 3914 - 9 ) is in the lower right-hand corner of the web page 3912 ; both the bottom and right edges of the web page have been reached while translating the web page. Upon reaching these edges of the document, in response to continued detection of the upward gesture 3925 , an area 3930 ( FIG. 8C ) beyond the bottom and right edges of the web page is displayed. In some embodiments, the area displayed beyond the edge(s) of an electronic document is visually distinct from the document, as described in operation 718 of process 700 ( FIG. 7 ). In FIG. 8C , the area 3930 is black and thus is visually distinct from the white background of the web page 3912 . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0230] Once the upward gesture 3925 is complete, such that a corresponding object is no longer detected on or near the touch screen display, the web page 3912 is translated (e.g., in a direction opposite to the original direction of translation) until the area 3930 is no longer displayed. FIG. 8D illustrates the result of this translation, which corresponds to operation 720 of process 700 ( FIG. 7 ): block 9 ( 3914 - 9 ) is now displayed in the lower right-hand corner of the portion of the screen allotted to display the web page 3912 and the area 3930 not displayed. In some embodiments, the direction of translation is not necessarily opposite to the original direction but may be in any direction such that, upon completion of the translation, the area beyond the edge(s) of the electronic document is no longer displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0231] FIG. 9 is a flow diagram illustrating a process 900 of displaying an electronic document having a document length and a document width, in accordance with some embodiments. The process 900 provides a simple visual indicator to a user that an electronic document is being displayed at a minimum magnification (e.g., the electronic document cannot be zoomed out and/or demagnified further). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0232] The process 900 is performed at a device with a touch screen display. In some embodiments, the device is a portable multifunction device. In some embodiments, the electronic document is a web page (e.g., web page 3912 , FIGS. 10A-10C ). In some embodiments, the electronic document is a digital image. In some embodiments, the electronic document is a word processing, spreadsheet, email or presentation document. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0233] The electronic document is displayed ( 902 ) at a first magnification on the touch screen display. A gesture is detected ( 904 ) on or near the touch screen display corresponding to a command to zoom out by a user-specified amount. In some embodiments, the gesture is a pinching gesture (e.g., gesture 3951 / 3953 , FIG. 10A ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0234] In response to detecting the gesture, the electronic document is displayed ( 906 ) at a magnification less than the first magnification. For example, the web page 3912 is shown at a lesser magnification in FIG. 10B than in FIG. 10A . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0235] If the document length or document width is not entirely displayed ( 908 -No) while the gesture is still detected on or near the touch screen display, the process 900 is complete ( 910 ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0236] If, however, the document length (e.g., 3957 , FIG. 10B ) or document width (e.g., 3959 , FIG. 10B ) is entirely displayed ( 908 -Yes) while the gesture (e.g., 3951 / 3953 ) is still detected on or near the touch screen display, the electronic document is displayed ( 912 ) at a magnification wherein areas beyond opposite edges of the electronic document (e.g., areas 3955 , FIG. 10B ) are displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0237] In some embodiments, the areas beyond opposite edges of the electronic document include an area beyond a top edge of the document and an area beyond a bottom edge of the document. In some embodiments, the areas beyond opposite edges of the electronic document include an area beyond a right edge of the document and an area beyond a left edge of the document. In some embodiments, the areas beyond opposite edges of the electronic document include an area beyond a top edge of the document, an area beyond a bottom edge of the document, an area beyond a right edge of the document, and an area beyond a left edge of the document (e.g., FIG. 10B ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0238] In some embodiments, the areas beyond opposite edges of the electronic document are black, gray, a solid color, or white. In some embodiments, the areas beyond opposite edges of the electronic document are visually distinct from the document. For example, the areas 3955 ( FIG. 10B ) are black and thus are visually distinct from the web page 3912 . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0239] Upon detecting termination of the gesture, the electronic document is displayed ( 914 ) at a magnification wherein the areas beyond opposite edges of the electronic document are no longer displayed. For example, the areas 3955 are not displayed in FIG. 10C . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0240] FIGS. 10A-10C illustrate the display of an electronic document at multiple magnifications in accordance with some embodiments. While FIGS. 10A-10C illustrate displaying these multiple magnifications in the context of a portable multifunction device 100 , displaying these multiple magnifications is not limited to portable multifunction devices. In the example of FIGS. 10A-10C , the document is a web page 3912 ; FIGS. 10A-10C (like FIGS. 8A-8D ) illustrate an exemplary user interface for a browser in accordance with some embodiments. An analogous user interface may be used to display other types of electronic documents, such as digital images or word processing, spreadsheet, email, or presentation documents. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0241] In FIG. 10A , the web page 3912 is displayed at a first magnification. The web page 3912 fills more than the allotted screen area: only the left sides of block 7 ( 3914 - 7 ) and block 8 ( 3914 - 8 ) are displayed and only the top left corner of block 9 ( 3914 - 9 ) is displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0242] In response to detecting a pinching gesture 3951 / 3953 ( FIG. 10A ), the web-page is displayed at a magnification less than the first magnification, as shown in FIG. 10B . If a document length 3957 or a document width 3959 is entirely displayed while the gesture 3951 / 3953 is still detected, areas 3955 beyond opposite edges of the web page 3912 are displayed. Upon detecting termination of the gesture 3951 / 3953 , the web page 3912 is displayed at a magnification wherein the areas 3955 are no longer displayed, as shown in FIG. 10C . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0243] FIG. 11 is a flow diagram illustrating a process 1100 of displaying an electronic document at multiple magnifications in accordance with some embodiments. The process 1100 provides a simple visual indicator to a user that an electronic document is being displayed at a maximum magnification (e.g., the electronic document cannot be zoomed in and/or magnified further). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0244] The process 1100 is performed at a device with a touch screen display. In some embodiments, the device is a portable multifunction device. In some embodiments, the electronic document is a web page (e.g., web page 3912 , FIGS. 12A-12C ). In some embodiments, the electronic document is a digital image (e.g., digital image 1302 , FIGS. 13A-13C ). In some embodiments, the electronic document is a word processing, spreadsheet, email or presentation document. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0245] At least a first portion of the electronic document is displayed ( 1102 ) at a first magnification. A gesture is detected ( 1104 ) on or near the touch screen display corresponding to a command to zoom in by a user-specified amount. In some embodiments, the gesture is a de-pinching gesture (e.g., 3931 / 3933 , FIGS. 12A and 13A ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0246] In response to detecting the gesture, decreasing portions of the electronic document are displayed ( 1106 ) at increasing magnifications. For example, in FIG. 12B a decreased portion of the web page 3912 is displayed at a higher magnification than the portion in FIG. 12A , and in FIG. 13B a decreased portion of the digital image 1302 is displayed at a higher magnification than the portion in FIG. 13A . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0247] If, upon detecting termination of the gesture, the magnification does not exceed a predefined magnification ( 1108 -No), the process 1100 is complete ( 1110 ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0248] If, however, upon detecting termination of the gesture, the magnification exceeds a predefined magnification ( 1108 -Yes), a respective portion of the electronic document is displayed ( 1112 ) at the predefined magnification. In the examples of FIGS. 12B and 13B , the magnification exceeds a predefined magnification. Upon detecting termination of the gesture 3931 / 3933 , a portion of the web page 3912 is displayed at the predefined magnification, as illustrated in FIG. 12C , and a portion of the digital image 1302 is displayed at the predefined magnification, as illustrated in FIG. 13C . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0249] In some embodiments, immediately prior to detecting termination of the gesture, a last decreased portion of the electronic document is displayed at a first resolution. Upon detecting termination of the gesture, the respective portion of the electronic document is displayed at a second resolution that is greater than the first resolution. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0250] FIGS. 12A-12C illustrate the display of an electronic document at multiple magnifications in accordance with some embodiments. While FIGS. 12A-12C illustrate displaying these multiple magnifications in the context of a portable multifunction device 100 , displaying these multiple magnifications is not limited to portable multifunction devices. In the example of FIGS. 12A-12C , the document is a web page 3912 ; FIGS. 12A-12C (like FIGS. 8A-8D ) illustrate an exemplary user interface for a browser in accordance with some embodiments. An analogous user interface may be used to display other types of electronic documents, such as digital images or word processing, spreadsheet, email, or presentation documents. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0251] In FIG. 12A , a first portion of the web page 3912 is displayed at a first magnification. The web page 3912 fills more than the allotted screen area: only the left sides of block 7 ( 3914 - 7 ) and block 8 ( 3914 - 8 ) are displayed and only the top left corner of block 9 ( 3914 - 9 ) is displayed. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0252] In response to detecting a de-pinching gesture 3931 / 3933 ( FIG. 12A ), decreasing portions of the web-page 3912 are displayed at increasing magnifications compared to the magnification shown in FIG. 12A . For example, the portion of the web page 3912 shown in FIG. 12B is smaller than and has a higher magnification than the portion of the web page 3912 shown in FIG. 12A . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0253] In the example of FIG. 12B , the magnification exceeds a predefined magnification. Upon detecting termination of the gesture 3931 / 3933 , a portion of the web page 3912 is displayed at the predefined magnification, as illustrated in FIG. 12C . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0254] FIGS. 13A-13C illustrate the display of an electronic document at multiple magnifications in accordance with some embodiments. While FIGS. 13A-13C illustrate displaying these multiple magnifications in the context of a portable multifunction device 100 , displaying these multiple magnifications is not limited to portable multifunction devices. In the example of FIGS. 13A-13C , the document is a digital image 1302 that includes an image of a person 1304 . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0255] In FIG. 13A , a digital image 1302 is displayed at a first magnification. In response to detecting a de-pinching gesture 3931 / 3933 , decreasing portions of the digital image 1302 are displayed at increasing magnifications compared to the magnification shown in FIG. 13A . For example, the portion of the digital image 1302 shown in FIG. 13B is smaller than and has a higher magnification than the portion of the digital image 1302 shown in FIG. 13A . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0256] In the example of FIG. 13B , the magnification exceeds a predefined magnification. Upon detecting termination of the gesture 3931 / 3933 , a portion of the digital image 1302 is displayed at the predefined magnification, as illustrated in FIG. 13C . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0257] FIG. 14 is a flow diagram illustrating a process 1400 of executing a screen rotation command in accordance with some embodiments. The process 1400 provides a simple visual indicator to a user that the user has not provided a sufficient gesture to initiate a 90&deg; screen rotation command. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0258] The process 1400 is performed at a device with a touch screen display. In some embodiments, the device is a portable multifunction device. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0259] A multifinger twisting gesture (e.g., 1506 , FIG. 15A , or 1508 , FIG. 15C ) is detected ( 1402 ) on or near the touch screen display. The multifinger twisting gesture has a corresponding degree of rotation. In some embodiments, the multifinger twisting gesture includes gestures by two thumbs 1604 -L and 1604 -R ( FIGS. 16A and 16D ) 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0260] If the corresponding degree of rotation exceeds a predefined degree of rotation ( 1404 -Yes), a 90&deg; screen rotation command is executed ( 1406 ). For example, the digital image 1502 of FIGS. 15A and 16A is rotated from a portrait orientation to a landscape orientation, as shown respectively in FIGS. 15B and 16B . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0261] If the corresponding degree of rotation does not exceed a predefined degree of rotation ( 1404 -No), a screen rotation command with an acute angle of rotation (i.e., less than 90&deg;) is executed ( 1408 ). For example, the digital image 1502 of FIGS. 15C and 16D is rotated by an acute angle, as shown respectively in FIGS. 15D and 16E . Upon ceasing to detect the multifinger twisting gesture, a screen rotation command is executed ( 1410 ) with an angle of rotation opposite to the acute angle (e.g., with the result shown in FIGS. 15E and 16F ). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0262] FIGS. 15A-15E illustrate rotating the display of an electronic document or other digital object in accordance with some embodiments. While FIGS. 15A-15E illustrate display rotation in the context of a portable multifunction device 100 , display rotation is not limited to portable multifunction devices. In the example of FIGS. 15A-15E , the electronic document is a digital image 1502 . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0263] In FIGS. 15A and 15C , the digital image 1502 is displayed in a portrait orientation. A multifinger twisting gesture 1506 ( FIG. 15A ) or 1508 ( FIG. 15C ) is detected on the touch screen display. The multifinger twisting gesture 1506 or 1508 has a corresponding degree of rotation. In some embodiments, the degree of rotation corresponds to a degree of rotation of an axis between the contact points on the touch screen display of the two fingers in the multifinger gesture (e.g., an axis between the center points or centroids of the contact regions of the two fingers). 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0264] In the example of FIG. 15A , the multifinger twisting gesture 1506 has a corresponding degree of rotation that exceeds a predefined degree of rotation. Thus, a 90&deg; screen rotation command is executed, with the result that the digital image is displayed in a landscape orientation, as shown in FIG. 15B . In the example of FIG. 15C , however, the multifinger twisting gesture 1508 has a corresponding degree of rotation that does not exceed a predefined degree of rotation. A screen rotation command with an acute angle of rotation is executed, with the result shown in FIG. 15D . Upon ceasing to detect the multifinger twisting gesture 1508 , a screen rotation command with an angle opposite to the acute angle is executed, with the result that the portrait orientation of the digital image 1502 is restored, as shown in FIG. 15E . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0265] FIGS. 16A-16F illustrate an exemplary screen rotation gesture in accordance with some embodiments. While FIGS. 16A-16F illustrate this screen rotation gesture in the context of a portable multifunction device 100 , this screen rotation gesture is not limited to portable multifunction devices. In the example of FIGS. 16A-16F , this screen rotation gesture is used to rotate the digital image 1502 . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0266] In FIG. 16A , the device 100 displays the digital image 1502 in a portrait orientation. Simultaneous rotation of two thumbs (e.g., 1604 -L and 1604 -R) in a first sense of rotation is detected on the touch screen display 112 . In some embodiments, the first sense of rotation is a clockwise rotation (e.g., FIG. 16C ). The simultaneous rotation of the two thumbs has a corresponding degree of rotation. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0267] In some embodiments, the sense of rotation for each thumb is detected by monitoring the change in orientation of the contact area of the thumb with the touch screen display. For example, if the contact area of the thumb is elliptical, the change in the orientation of an axis of the ellipse may be detected (e.g., from contact ellipse 1606 -L in FIG. 16A to contact ellipse 1608 -L in FIG. 16B , as shown on an enlarged portion of touch screen 112 in FIG. 16C ). In some embodiments, the change in the orientation of the axis of the ellipse determines the corresponding degree of rotation. In some embodiments, at least some of a user's other fingers (i.e., fingers other than thumbs 1604 -L and 1604 -R) support the device 100 by contacting the backside of the device. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0268] In some embodiments, the first sense of rotation is a counterclockwise rotation. For example, if thumb 1604 -L is initially on the lower left side of touch screen 112 (rather than the upper left side in FIG. 16A ), thumb 1604 -R is initially on the upper right side of touch screen 112 (rather than the lower right side in FIG. 16A ), and the thumbs are moved apart from each other, then the sense of rotation detected by the touch screen 112 will be counterclockwise for both thumbs. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0269] If the corresponding degree of rotation exceeds a predefined degree of rotation, a 90&deg; screen rotation command is executed. For example, display of the digital image 1502 is rotated from the portrait orientation of FIG. 16A to a landscape orientation in FIG. 16B . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0270] If, however, the corresponding degree of rotation does not exceed a predefined degree of rotation, a screen rotation command with an acute angle of rotation is executed. For example, the digital image 1502 in FIG. 16D is rotated by an acute angle, with the result shown in FIG. 16E . Once detection of the two thumbs 1604 -L and 1604 -R ceases, a screen rotation command with an angle of rotation opposite to the acute angle is executed, thereby restoring the digital image 1502 to a portrait orientation, as shown in FIG. 16F . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0271] While FIGS. 6A-6D , 8 A- 8 D, 10 A- 10 C, 12 A- 12 C, 13 A- 13 C, 15 A- 15 E, and 16 A- 16 F illustrate scrolling, translation, scaling, and rotation operations in the context of a portable multifunction device 100 , similar operations may be performed on any device with a touch-screen display, in accordance with some embodiments. The device, such as device 1700 below, may or may not be portable and the function or functions performed by the device may vary. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0272] FIG. 17 is a block diagram illustrating a device 1700 with a touch-screen display in accordance with some embodiments. Device 1700 need not be portable. The device 1700 typically includes one or more processing units (CPU's) 1710 , one or more network or other communications interfaces 1760 , memory 1770 , and one or more communication buses 1720 for interconnecting these components. The communication buses 1720 may include circuitry (sometimes called a chipset) that interconnects and controls communications between system components. The device 1700 includes a user interface 1730 comprising a touch-screen display 1740 . The user interface 1730 also may include a keyboard and/or mouse (or other pointing device) 1750 . Memory 1770 includes high-speed random access memory, such as DRAM, SRAM, DDR RAM or other random access solid state memory devices; and may include non-volatile memory, such as one or more magnetic disk storage devices, optical disk storage devices, flash memory devices, or other non-volatile solid state storage devices. Memory 1770 may optionally include one or more storage devices remotely located from the CPU(s) 1710 . In some embodiments, memory 1770 stores programs, modules, and data structures analogous to the programs, modules, and data structures stored in the memory 102 of portable multifunction device 100 ( FIG. 1 ), or a subset thereof. Furthermore, memory 1770 may store additional programs, modules, and data structures (not shown) not present in the memory 102 of portable multifunction device 100 . 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0273] Each of the above identified elements in FIG. 17 may be stored in one or more of the previously mentioned memory devices. Each of the above identified modules corresponds to a set of instructions for performing a function described above. The above identified modules or programs (i.e., sets of instructions) need not be implemented as separate software programs, procedures or modules, and thus various subsets of these modules may be combined or otherwise re-arranged in various embodiments. In some embodiments, memory 1770 may store a subset of the modules and data structures identified above. Furthermore, memory 1770 may store additional modules and data structures not described above. 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ [0274] The foregoing description, for purpose of explanation, has been described with reference to specific embodiments. However, the illustrative discussions above are not intended to be exhaustive or to limit the invention to the precise forms disclosed. Many modifications and variations are possible in view of the above teachings. The embodiments were chosen and described in order to best explain the principles of the invention and its practical applications, to thereby enable others skilled in the art to best utilize the invention and various embodiments with various modifications as are suited to the particular use contemplated. 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ (57) 
+ Claims 
+ 
+ 
+ 
+ 
+ 1. A computer-implemented method, comprising:
+ at a device with a touch screen display:
+ displaying a first portion of an electronic document; 
+
+ detecting a movement of an object on or near the touch screen display; 
+
+ in response to detecting the movement, translating the electronic document displayed on the touch screen display in a first direction to display a second portion of the electronic document, wherein the second portion is different from the first portion; 
+
+ in response to an edge of the electronic document being reached while translating the electronic document in the first direction while the object is still detected on or near the touch screen display:
+ displaying an area beyond the edge of the document, and 
+
+ displaying a third portion of the electronic document, wherein the third portion is smaller than the first portion; and 
+
+ in response to detecting that the object is no longer on or near the touch screen display, translating the electronic document in a second direction until the area beyond the edge of the electronic document is no longer displayed to display a fourth portion of the electronic document, wherein the fourth portion is different from the first portion. 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 2. The computer-implemented method of claim 1 , wherein the first portion of the electronic document, the second portion of the electronic document, the third portion of the electronic document, and the fourth portion of the electronic document are displayed at the same magnification. 
+ 
+ 
+ 
+ 
+ 3. The computer-implemented method of claim 1 , wherein the movement of the object is on the touch screen display. 
+ 
+ 
+ 
+ 
+ 4. The computer-implemented method of claim 1 , wherein the object is a finger. 
+ 
+ 
+ 
+ 
+ 5. The computer-implemented method of claim 1 , wherein the first direction is a vertical direction, a horizontal direction, or a diagonal direction. 
+ 
+ 
+ 
+ 
+ 6. The computer-implemented method of claim 1 , wherein the electronic document is a web page. 
+ 
+ 
+ 
+ 
+ 7. The computer-implemented method of claim 1 , wherein the electronic document is a digital image. 
+ 
+ 
+ 
+ 
+ 8. The computer-implemented method of claim 1 , wherein the electronic document is a word processing, spreadsheet, email or presentation document. 
+ 
+ 
+ 
+ 
+ 9. The computer-implemented method of claim 1 , wherein the electronic document includes a list of items. 
+ 
+ 
+ 
+ 
+ 10. The computer-implemented method of claim 1 , wherein the second direction is opposite the first direction. 
+ 
+ 
+ 
+ 
+ 11. The computer-implemented method of claim 1 , wherein translating in the first direction prior to reaching an edge of the document has an associated speed of translation that corresponds to a speed of movement of the object. 
+ 
+ 
+ 
+ 
+ 12. The computer-implemented method of claim 1 , wherein translating in the first direction is in accordance with a simulation of an equation of motion having friction. 
+ 
+ 
+ 
+ 
+ 13. The computer-implemented method of claim 1 , wherein the area beyond the edge of the document is black, gray, a solid color, or white. 
+ 
+ 
+ 
+ 
+ 14. The computer-implemented method of claim 1 , wherein the area beyond the edge of the document is visually distinct from the document. 
+ 
+ 
+ 
+ 
+ 15. The computer-implemented method of claim 1 , wherein translating the document in the second direction is a damped motion. 
+ 
+ 
+ 
+ 
+ 16. The computer-implemented method of claim 1 , wherein changing from translating in the first direction to translating in the second direction until the area beyond the edge of the document is no longer displayed makes the edge of the electronic document appear to be elastically attached to an edge of the touch screen display or to an edge displayed on the touch screen display. 
+ 
+ 
+ 
+ 
+ 17. The computer-implemented method of claim 1 , wherein translating in the first direction prior to reaching the edge of the electronic document has a first associated translating distance that corresponds to a distance of movement of the object prior to reaching the edge of the electronic document; and wherein displaying an area beyond the edge of the electronic document comprises translating the electronic document in the first direction for a second associated translating distance, wherein the second associated translating distance is less than a distance of movement of the object after reaching the edge of the electronic document. 
+ 
+ 
+ 
+ 
+ 18. The computer-implemented method of claim 1 , wherein translating in the first direction prior to reaching the edge of the electronic document has a first associated translating speed that corresponds to a speed of movement of the object, and wherein displaying an area beyond the edge of the electronic document comprises translating the electronic document in the first direction at a second associated translating speed, wherein the second associated translating speed is slower than the first associated translating speed. 
+ 
+ 
+ 
+ 
+ 19. A device, comprising:
+ a touch screen display; 
+
+ one or more processors; 
+
+ memory; and 
+
+ one or more programs, wherein the one or more programs are stored in the memory and configured to be executed by the one or more processors, the programs including:
+ instructions for displaying a first portion of an electronic document; 
+
+ instructions for detecting a movement of an object on or near the touch screen display; 
+
+ instructions for translating the electronic document displayed on the touch screen display in a first direction to display a second portion of the electronic document, wherein the second portion is different from the first portion, in response to detecting the movement; 
+
+ instructions for displaying an area beyond an edge of the electronic document and displaying a third portion of the electronic document, wherein the third portion is smaller than the first portion, in response to the edge of the electronic document being reached while translating the electronic document in the first direction while the object is still detected on or near the touch screen display; and 
+
+ instructions for translating the electronic document in a second direction until the area beyond the edge of the electronic document is no longer displayed to display a fourth portion of the electronic document, wherein the fourth portion is different from the first portion, in response to detecting that the object is no longer on or near the touch screen display. 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 20. A computer readable storage medium having stored therein instructions, which when executed by a device with a touch screen display, cause the device to:
+ display a first portion of an electronic document; 
+
+ detect a movement of an object on or near the touch screen display; 
+
+ translate the electronic document displayed on the touch screen display in a first direction to display a second portion of the electronic document, wherein the second portion is different from the first portion, in response to detecting the movement 
+
+ display an area beyond an edge of the electronic document and display a third portion of the electronic document, wherein the third portion is smaller than the first portion, if the edge of the electronic document is reached while translating the electronic document in the first direction while the object is still detected on or near the touch screen display; and 
+
+ translate the electronic document in a second direction until the area beyond the edge of the electronic document is no longer displayed to display a fourth portion of the electronic document, wherein the fourth portion is different from the first portion, in response to detecting that the object is no longer on or near the touch screen display. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ * * * * * 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+ 
+  Collection Management 
+  
+  
+    Create a new Collection with Patent 
+  
+ 
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+ 	 
+  
+
+  
+   
+   The Lens is a service of
+     
+   
+  
+  
+   
+  
+  
+
+
+
+
+
+
+
+ 
+  Close 
+ 
+
+
+
+
+
+
+ 
+  
+   
+    
+   
+   
+    
+   
+   
+    
+   
+   
+    
+   
+   
+    
+   
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+    Sign In 
+    
+     Email address or Username 
+     
+    
+
+    
+     Password 
+     
+    
+
+    Sign in 
+    Forgot Password?
