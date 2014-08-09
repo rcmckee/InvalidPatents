@@ -124,26 +124,26 @@ fieldSrch = fieldSrch[0]
 #atnyAgntFirm should be accounted for since I had to define it for the if statment to have a variable to change
 abst = abst[0]
 spec = spec[0]  #just keep as a comment so it is easy to look through in terminal while testing
-claim1 = claim1[0]
-claim2 = claim1[1]+claim2[0]
-claim3 = claim2[1]+claim3[0]
-claim4 = claim3[1]+claim4[0]
-claim5 = claim4[1]+claim5[0]
-claim6 = claim5[1]+claim6[0]
-claim7 = claim6[1]+claim7[0]
-claim8 = claim7[1]+claim8[0]
-claim9 = claim8[1]+claim9[0]
-claim10 = claim9[1]+claim10[0]
-claim11 = claim10[1]+claim11[0]
-claim12 = claim11[1]+claim12[0]
-claim13 = claim12[1]+claim13[0]
-claim14 = claim13[1]+claim14[0]
-claim15 = claim14[1]+claim15[0]
-claim16 = claim15[1]+claim16[0]
-claim17 = claim16[1]+claim17[0]
-claim18 = claim17[1]+claim18[0]
-claim19 = claim18[1]+claim19[0]
-claim20 = claim19[1]+claim20[0]
+dbclaim1 = claim1[0]
+dbclaim2 = claim1[1]+claim2[0]
+dbclaim3 = claim2[1]+claim3[0]
+dbclaim4 = claim3[1]+claim4[0]
+dbclaim5 = claim4[1]+claim5[0]
+dbclaim6 = claim5[1]+claim6[0]
+dbclaim7 = claim6[1]+claim7[0]
+dbclaim8 = claim7[1]+claim8[0]
+dbclaim9 = claim8[1]+claim9[0]
+dbclaim10 = claim9[1]+claim10[0]
+dbclaim11 = claim10[1]+claim11[0]
+dbclaim12 = claim11[1]+claim12[0]
+dbclaim13 = claim12[1]+claim13[0]
+dbclaim14 = claim13[1]+claim14[0]
+dbclaim15 = claim14[1]+claim15[0]
+dbclaim16 = claim15[1]+claim16[0]
+dbclaim17 = claim16[1]+claim17[0]
+dbclaim18 = claim17[1]+claim18[0]
+dbclaim19 = claim18[1]+claim19[0]
+dbclaim20 = claim19[1]+claim20[0]
 
 
 
@@ -183,7 +183,8 @@ else:
 db = sqlite3.connect('1ipDatabase.sqlite') #need .sqlite extension and maybe open file with sqlite?
 db.text_factory = str
 cursor = db.cursor()
-cursor.execute('select * from patent where pubNum=:pubNum and title=:title and patNum=:patNum and inventors=:inventors and assgnee=:assgnee and filingDat=:filingDat and intlClass=:intlClass and usaClass=:usaClass and fieldSrch=:fieldSrch and primEx=:primEx and assEx=:assEx and atnyAgntFirm=:atnyAgntFirm and abst=:abst and spec=:spec and claim1=:claim1 and claim2=:claim2 and claim3=:claim3 and claim4=:claim4 and claim5=:claim5 and claim6=:claim6 and claim7=:claim7 and claim8=:claim8 and claim9=:claim9 and claim10=:claim10 and claim11=:claim11 and claim12=:claim12 and claim13=:claim13 and claim14=:claim14 and claim15=:claim15 and claim16=:claim16 and claim17=:claim17 and claim18=:claim18 and claim19=:claim19 and claim20=:claim20 and regInfo=:regInfo and draftingAtny=:draftingAtny and lawSchool=:lawSchool and issueStat=:issueStat', {"pubNum":pubNum, "title":title, "patNum":patNum, "inventors":inventors, "assgnee":assgnee, "filingDat":filingDat, "intlClass":intlClass, "usaClass":usaClass, "fieldSrch":fieldSrch, "primEx":primEx, "assEx":assEx, "atnyAgntFirm":atnyAgntFirm, "abst":abst, "spec":spec, "claim1":claim1, "claim2":claim2, "claim3":claim3, "claim4":claim4, "claim5":claim5, "claim6":claim6, "claim7":claim7, "claim8":claim8, "claim9":claim9, "claim10":claim10, "claim11":claim11, "claim12":claim12, "claim13":claim13, "claim14":claim14 , "claim15":claim15, "claim16":claim16, "claim17":claim17, "claim18":claim18, "claim19":claim19, "claim20":claim20, "regInfo":regInfo, "draftingAtny":draftingAtny, "lawSchool":lawSchool, "issueStat":issueStat})
+cursor.execute('insert into patent values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',(pubNum, title, patNum, inventors, assgnee, filingDat, intlClass, usaClass, fieldSrch, primEx, assEx, atnyAgntFirm, abst, spec, dbclaim1, dbclaim2, dbclaim3, dbclaim4, dbclaim5, dbclaim6, dbclaim7, dbclaim8, dbclaim9, dbclaim10, dbclaim11, dbclaim12, dbclaim13, dbclaim14, dbclaim15, dbclaim16, dbclaim17, dbclaim18, dbclaim19, dbclaim20, regInfo, draftingAtny, lawSchool, issueStat))
+#cursor.execute('select * from patent where pubNum=:pubNum and title=:title and patNum=:patNum and inventors=:inventors and assgnee=:assgnee and filingDat=:filingDat and intlClass=:intlClass and usaClass=:usaClass and fieldSrch=:fieldSrch and primEx=:primEx and assEx=:assEx and atnyAgntFirm=:atnyAgntFirm and abst=:abst and spec=:spec and dbclaim1=:claim1 and dbclaim2=:claim2 and dbclaim3=:claim3 and dbclaim4=:claim4 and dbclaim5=:claim5 and dbclaim6=:claim6 and dbclaim7=:claim7 and dbclaim8=:claim8 and dbclaim9=:claim9 and dbclaim10=:claim10 and dbclaim11=:claim11 and dbclaim12=:claim12 and dbclaim13=:claim13 and dbclaim14=:claim14 and dbclaim15=:claim15 and dbclaim16=:claim16 and dbclaim17=:claim17 and dbclaim18=:claim18 and dbclaim19=:claim19 and dbclaim20=:claim20 and regInfo=:regInfo and draftingAtny=:draftingAtny and lawSchool=:lawSchool and issueStat=:issueStat', {"pubNum":pubNum, "title":title, "patNum":patNum, "inventors":inventors, "assgnee":assgnee, "filingDat":filingDat, "intlClass":intlClass, "usaClass":usaClass, "fieldSrch":fieldSrch, "primEx":primEx, "assEx":assEx, "atnyAgntFirm":atnyAgntFirm, "abst":abst, "spec":spec, "claim1":dbclaim1, "claim2":dbclaim2, "claim3":dbclaim3, "claim4":dbclaim4, "claim5":dbclaim5, "claim6":dbclaim6, "claim7":dbclaim7, "claim8":dbclaim8, "claim9":dbclaim9, "claim10":dbclaim10, "claim11":dbclaim11, "claim12":dbclaim12, "claim13":dbclaim13, "claim14":dbclaim14 , "claim15":dbclaim15, "claim16":dbclaim16, "claim17":dbclaim17, "claim18":dbclaim18, "claim19":dbclaim19, "claim20":dbclaim20, "regInfo":regInfo, "draftingAtny":draftingAtny, "lawSchool":lawSchool, "issueStat":issueStat})
 
 db.commit()
 print pubNum+ ' inserted into database.'
