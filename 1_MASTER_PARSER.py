@@ -9,7 +9,7 @@ import sqlite3
 
 #******************SCRAPE FULL TEXT******************
 
-with open ('US_7469381_B2_fulltext.html', "r") as myfile:   #http://goo.gl/7osxn6 got this code from this thread
+with open ('2ndtestpageview-source www.lens.org lens patent US_5612524_A fulltext.html', "r") as myfile:   #http://goo.gl/7osxn6 got this code from this thread
     text=myfile.read()
 raw = nltk.clean_html(text)
 
@@ -62,9 +62,11 @@ if len(s_int_atnyAgntFirm) > 1:                       #this means it found attor
   atnyAgntFirm = s_int_atnyAgntFirm.partition('(5')   #
   print atnyAgntFirm[0]+'test to see if printing atnyAgntFirm[0]'
   atnyAgntFirm = atnyAgntFirm[0]        #changed from atnyagntfirm[2] to [0] then changed the later code to referense
+else:
+  atnyAgntFirm = 'none'
 
 
-int_abst = int_atnyAgntFirm[2].partition('7)')
+int_abst = int_primEx[2].partition('7)') #goes from primary examiner to abstract regardless of if atnyAgntFirm is found or not
 abst = int_abst[2].partition('Draw')
 print abst[0]+'test to see if printing abst'
 int_spec = abst[2].partition('ng')
@@ -154,7 +156,7 @@ issueStat = 'issueStat'
 
 #******************SCRAPE REGULATORY INFO************
 
-with open ('htmlonlyviewUS_5612524_A regulatory.html', "r") as myfile:
+with open ('htmlonlyviewUS_7469381_B2 regulatory.html', "r") as myfile:
     text=myfile.read()
 raw = nltk.clean_html(text)
 
