@@ -175,7 +175,7 @@ else:
     regInfoCnfrmd = int_regInfo[2].partition('CONFIRMED')
     regInfoCncld = regInfoCnfrmd[2].partition('CANCELLED')
     regInfo = regInfoCnfrmd[0] + regInfoCnfrmd[1] +' '+ regInfoCncld[0] + regInfoCncld[1]+'.'
-    print regInfo + '*********does this print?**********'
+    print regInfo + '*********does regInfo print?**********'
 
 #******************INSERT INTO DATABASE**************
 # to learn how to do this see https://docs.python.org/2/library/sqlite3.html#sqlite3.Cursor.execute
