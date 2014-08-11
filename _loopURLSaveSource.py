@@ -1,6 +1,7 @@
 # coding: utf-8
 import nltk
 from urllib import urlopen
+from urllib import FancyURLopener
 #to get this to work I need to copy the cells from the excel-->paste into a new textedit file-->select all-->select formart-->make plain text-->save as .txt file-->run program
 input_file = open('testUrlList.txt', 'r')
 count_lines = 0
@@ -12,15 +13,22 @@ for line in input_file:
     print 'website: ', website,
     count_lines += 1
 #    html = urlopen(website).read() # to input string variable look at https://stackoverflow.com/questions/17385028/how-to-add-variable-to-url-paramater-in-urllib
+#     the above line only worked on lense.org so I had to change the user-agent to access google. http://wolfprojects.altervista.org/changeua.php
+    class MyOpener(FancyURLopener):
+        version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
+    myopener = MyOpener()
+    page = myopener.open(website)
+    html = page.read()
+
     file_name = '/Users/robertmckee/Tresors/Projects/InvalidPatents/1stFileGoogle/' + str((numpat.strip()) + '_google.html') # I finally prevented the new line between numpat and '_google.html' by putting numpat.strip() in parenthasis (numpat.strip(). )here I couldn't use the website address because the dashes and the comma after numpat prevents the creation of a new line in the file name which doesn't work either
                   #putting the above path in creates the file name with the path to where it should be made. when put into the newfile = open() function below it will create the new file in that folder which is a different directory/folder than the current script is in. If I didn't add this then the files would just be created in the same folder/directory that this script is in.
     print 'file created: ', file_name
     newfile = open(file_name,'w') #YAY! saving it as an html file works like a charm motha fucka!
-#    newfile.write(html)
+    newfile.write(html)
     newfile.close()  #When you’re done with a file, call f.close() to close it and free up any system resources taken up by the open file. After calling f.close(), attempts to use the file object will automatically fail.
 print 'number of lines:', count_lines
 
-#just solve connection error, this worked with lens.org.
+
 
 
 
