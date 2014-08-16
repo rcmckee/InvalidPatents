@@ -31,10 +31,18 @@ for file in ginput_fileList:
   pubNumLast = pubNumNum[2].partition('Publication')
   pubNum = pubNumUS[1]+'_'+pubNumNum[0]+'_'+pubNumLast[0]
   print int_pubNum[1]+pubNum
-  lensUrlListFile.write(pubNum+'\n')
+  lensUrlListFile.write(pubNum+'\n') #the '\n' causes it to do a new line.
+
+  #**filing date [filingDat]
+  int_filingDat = raw.partition('Filing date ')
+  int_filingDatMnth = int_filingDat[2].partition(' ')
+  int_filingDatDay = int_filingDatMnth[2].partition(', ')
+  int_filingDatYr = int_filingDatDay[2].partition('Priority date')
+  filingDat = int_filingDat[1]+int_filingDatYr[0]+' '+int_filingDatMnth[0]+' '+int_filingDatDay[0]
+  print filingDat
 
   #**assgnee
-  int_assgnee = raw.partition('Original Assignee ')
+  int_assgnee = int_filingDatYr[2].partition('Original Assignee ')
   assgneeName = int_assgnee[2].partition('Export')
   assgnee = assgneeName[0]
   print int_assgnee[1]+assgnee
@@ -50,7 +58,7 @@ for file in ginput_fileList:
   else:
     print 'No Canceled Claims'
 #***create/write/append to a txt file for url list of lens.org scraping
-
+  #already done further up
 
 
 #*** create/write to a database
