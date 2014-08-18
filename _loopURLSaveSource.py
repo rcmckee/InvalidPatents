@@ -10,7 +10,7 @@ for line in input_file:
     numpat = str(line) #To write something other than a string, it needs to be converted to a string first with str()
     numpat.strip() #'.strip()' removes the \n 'new line' code that would otherwise print out a bad url with the '\n' and if you have an '\' in the file name it starts looking for a directory so it causes a problem.
     website = str('http://www.google.com/patents/us'+ numpat) #does the comma prevent '\n' from being created?
-    print 'website: ', website,
+    #print 'website: ', website,
     count_lines += 1
 #    html = urlopen(website).read() # to input string variable look at https://stackoverflow.com/questions/17385028/how-to-add-variable-to-url-paramater-in-urllib
 #     the above line only worked on lense.org so I had to change the user-agent to access google. http://wolfprojects.altervista.org/changeua.php
@@ -22,11 +22,12 @@ for line in input_file:
 
     file_name = '/Users/robertmckee/Tresors/Projects/InvalidPatents/1stFileGoogle/' + str((numpat.strip()) + '_google.html') # I finally prevented the new line between numpat and '_google.html' by putting numpat.strip() in parenthasis (numpat.strip(). )here I couldn't use the website address because the dashes and the comma after numpat prevents the creation of a new line in the file name which doesn't work either
                   #putting the above path in creates the file name with the path to where it should be made. when put into the newfile = open() function below it will create the new file in that folder which is a different directory/folder than the current script is in. If I didn't add this then the files would just be created in the same folder/directory that this script is in.
-    print 'file created: ', file_name
+    #print 'file created: ', file_name
     newfile = open(file_name,'w') #YAY! saving it as an html file works like a charm motha fucka!
     newfile.write(html)
     newfile.close()  #When you’re done with a file, call f.close() to close it and free up any system resources taken up by the open file. After calling f.close(), attempts to use the file object will automatically fail.
-print 'number of lines:', count_lines
+    print 'number of sites visited ', count_lines
+print 'total number of lines:', count_lines
 
 
 
