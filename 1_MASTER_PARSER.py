@@ -183,7 +183,7 @@ else:
 #******************INSERT INTO DATABASE**************
 # to learn how to do this see https://docs.python.org/2/library/sqlite3.html#sqlite3.Cursor.execute
 
-db = sqlite3.connect('1ipDatabase.sqlite') #need .sqlite extension and maybe open file with sqlite?
+db = sqlite3.connect('/Users/robertmckee/Tresors/Projects/InvalidPatentFiles/1ipDatabase.sqlite') #need .sqlite extension and maybe open file with sqlite?
 db.text_factory = str
 cursor = db.cursor()
 cursor.execute('insert into patent values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',(pubNum, title, patNum, inventors, assgnee, filingDat, intlClass, usaClass, fieldSrch, primEx, assEx, atnyAgntFirm, abst, spec, dbclaim1, dbclaim2, dbclaim3, dbclaim4, dbclaim5, dbclaim6, dbclaim7, dbclaim8, dbclaim9, dbclaim10, dbclaim11, dbclaim12, dbclaim13, dbclaim14, dbclaim15, dbclaim16, dbclaim17, dbclaim18, dbclaim19, dbclaim20, regInfo, draftingAtny, lawSchool, issueStat))

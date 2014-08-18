@@ -10,7 +10,7 @@ db = sqlite3.connect('_googlePgsDb.sqlite') #put this up here so I'm not continu
 #***open files with a loop WITH statement that will close them after it is done
 #test folder with 5 google html files is desktop/gHtmlTestFolder
 
-folder = '/Users/robertmckee/Desktop/gHtmlTestFolder'
+folder = '/Users/robertmckee/Tresors/Projects/InvalidPatents/1stFileGoogle'
 ginput_fileList = os.listdir(folder) #creats list of files in folder
 #with open (ginput_file, "r") as myfile:   #http://goo.gl/7osxn6 got this code from this thread
 #    text=myfile.read()
@@ -18,11 +18,11 @@ ginput_fileList = os.listdir(folder) #creats list of files in folder
 counter = 0
 lensUrlListFile = open('/Users/robertmckee/Tresors/Projects/InvalidPatents/_LensUrlList.txt',"a")
 for file in ginput_fileList:
-  file_name = '/Users/robertmckee/Desktop/gHtmlTestFolder/' + file
+  file_name = '/Users/robertmckee/Tresors/Projects/InvalidPatents/1stFileGoogle/' + file
   with open(file_name, 'r') as myfile:
     text = myfile.read()
   raw = nltk.clean_html(text)
-  print file_name  #prints each file name. loops through each file in folder.
+  #print file_name  #prints each file name. loops through each file in folder.
 
 #***parse the files to get pubNum assignee and if cancelled claims
   #**pubNum
@@ -42,7 +42,7 @@ for file in ginput_fileList:
   int_filingDatDay = int_filingDatMnth[2].partition(', ')
   int_filingDatYr = int_filingDatDay[2].partition('Priority date')
   filingDat = int_filingDat[1]+int_filingDatYr[0]+' '+int_filingDatMnth[0]+' '+int_filingDatDay[0]
-  print filingDat
+  #print filingDat
   filingDatYr = int_filingDatYr[0]
   filingDatMnth = int_filingDatMnth[0]
   filingDatDay = int_filingDatDay[0]
@@ -52,7 +52,7 @@ for file in ginput_fileList:
   int_assgnee = int_filingDatYr[2].partition('Original Assignee ')
   assgneeName = int_assgnee[2].partition('Export')
   assgnee = assgneeName[0]
-  print int_assgnee[1]+assgnee
+  #print int_assgnee[1]+assgnee
 
   #**canceled or cancelled
   int_legalEventsString = assgneeName[2].partition('Legal Events')
