@@ -26,6 +26,7 @@ for line in input_file:
     newfile = open(file_name,'w') #YAY! saving it as an html file works like a charm motha fucka!
     newfile.write(html)
     newfile.close()  #When you’re done with a file, call f.close() to close it and free up any system resources taken up by the open file. After calling f.close(), attempts to use the file object will automatically fail.
+#********do I need to close the connection? myopener.close()? http://stackoverflow.com/questions/6589960/how-to-close-urllib2-connection    
     print 'number of sites visited ', count_lines
 print 'total number of lines:', count_lines
 
