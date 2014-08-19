@@ -6,11 +6,12 @@ from urllib import FancyURLopener
 input_file = open('/Users/robertmckee/Tresors/Projects/InvalidPatentFiles/_testLensUrlList.txt', 'r')
 count_lines = 0
 for line in input_file:
-    print 'from text file ', line, #the comma prevents a new line created. if a new line is created it also creates a '\n' which we don't want if we are using the text for a file name. While it might not show up when printing it will damn sure show up in a file name and fuck up everything. The '\n' tells the computer to look for a file in a new directory so it goes hay wire.
-    pubNum = str(line) #To write something other than a string, it needs to be converted to a string first with str()
-    pubNum.strip() #'.strip()' removes the \n 'new line' code that would otherwise print out a bad url with the '\n' and if you have an '\' in the file name it starts looking for a directory so it causes a problem.
+    print 'from text file ', line #the comma prevents a new line created. if a new line is created it also creates a '\n' which we don't want if we are using the text for a file name. While it might not show up when printing it will damn sure show up in a file name and fuck up everything. The '\n' tells the computer to look for a file in a new directory so it goes hay wire.
+    pubNumwhitespace = str(line) #To write something other than a string, it needs to be converted to a string first with str()
+    pubNum = pubNumwhitespace.strip()
+#    pubNum.strip() #'.strip()' removes the \n 'new line' code that would otherwise print out a bad url with the '\n' and if you have an '\' in the file name it starts looking for a directory so it causes a problem.
     website = str('http://www.lens.org/lens/patent/'+ pubNum + '/fulltext') #does the comma prevent '\n' from being created?
-#    print 'website: ', website,
+    print 'website: ', website
     
 #    page = urlopen(website)
 #    html = page.read() # to input string variable look at https://stackoverflow.com/questions/17385028/how-to-add-variable-to-url-paramater-in-urllib
