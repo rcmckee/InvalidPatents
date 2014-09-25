@@ -16,7 +16,7 @@ ginput_fileList = os.listdir(folder) #creats list of files in folder
 #    text=myfile.read()
 #raw = nltk.clean_html(text)
 counter = 0
-lensUrlListFile = open('/Users/robertmckee/Tresors/Projects/InvalidPatents/_LensUrlList.txt',"a")
+lensUrlListFile = open('/Users/robertmckee/Tresors/Projects/InvalidPatentFiles/_LensUrlList.txt',"a")
 for file in ginput_fileList:
   file_name = '/Users/robertmckee/Tresors/Projects/InvalidPatents/1stFileGoogle/' + file
   with open(file_name, 'r') as myfile:
