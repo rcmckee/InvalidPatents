@@ -11,8 +11,8 @@ for line in input_file:
     website = str('http://www.lens.org/lens/patent/'+ pubNum + '/fulltext') #does the comma prevent '\n' from being created?
     print 'website: ', website
 
-    #user = 'rmckee'
-    #passW = '3atNcoEXbt'
+    #user = ''
+    #passW = ''
     pageCurl = 'curl -x proxy.crawlera.com:8010 -U rmckee:3atNcoEXbt ' + website
     page = urlopen(pageCurl)
     html = page.read()
